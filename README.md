@@ -28,21 +28,16 @@
 - Select **"Merge"** or just **double-click** it
 - Click **"Yes"** when Windows asks for administrator permission
 
-**Option B (Command Line):**
-⚠️ **Must run PowerShell as Administrator**
-- Right-click PowerShell → "Run as Administrator"
+**Option B (PowerShell Alternative):**
 ```powershell
 # Example: If you downloaded and extracted the ZIP to Downloads
-cd "$env:USERPROFILE\Downloads\windows-doh-registry-main\DoH-Well-Known-Servers"
+Start-Process "$env:USERPROFILE\Downloads\windows-doh-registry-main\DoH-Well-Known-Servers\Doh Well Known Servers.reg"
 
-# Or if you cloned with git
-cd "path\to\where\you\cloned\windows-doh-registry\DoH-Well-Known-Servers"
-
-# Then import
-reg import "Doh Well Known Servers.reg"
+# Or use your actual path where you saved the file
+# Start-Process "C:\Your\Actual\Path\Doh Well Known Servers.reg"
 ```
 
-**Note:** You must navigate to where YOU actually saved/extracted the files. The path above is just an example.
+This opens the file and prompts you to merge it (requires Administrator permission).
 
 ### Step 3: Restart DNS Service
 ```powershell
