@@ -29,15 +29,17 @@
 
 **Option B (Command Line):**
 ```powershell
-# Example: If you extracted to Downloads folder
+# Example: If you downloaded and extracted the ZIP to Downloads
 cd "$env:USERPROFILE\Downloads\windows-doh-registry-main\DoH-Well-Known-Servers"
 
-# Or navigate to wherever you saved it
-# cd "C:\Your\Actual\Path\Here"
+# Or if you cloned with git
+cd "path\to\where\you\cloned\windows-doh-registry\DoH-Well-Known-Servers"
 
-# Import it
+# Then import
 reg import "Doh Well Known Servers.reg"
 ```
+
+**Note:** You must navigate to where YOU actually saved/extracted the files. The path above is just an example.
 
 ### Step 3: Restart DNS Service
 ```powershell
