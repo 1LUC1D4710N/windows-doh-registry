@@ -1,0 +1,21 @@
+# Exclude system-specific registry files
+Interface-Specific-Parameters/
+*InterfaceSpecificParameters*.reg
+
+# Exclude personal backup files
+dns-backup-*.reg
+
+# Exclude generated/customized files
+*_customized.reg
+*_backup.reg
+
+# Windows registry backup files
+*.reg.bak
+
+# Temporary files
+*.tmp
+*.temp
+
+# Personal system information
+system-info.txt
+adapter-list.txt
