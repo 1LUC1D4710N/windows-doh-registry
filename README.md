@@ -17,10 +17,11 @@
 **Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
 
 **Popular DNS IPs:**
-- `1.1.1.1` - Cloudflare (Fast, privacy-focused)
-- `9.9.9.9` - Quad9 (Blocks malware)
-- `193.110.81.0` - DNS0.EU (EU-based, zero-logging)
-- `8.8.8.8` - Google (Reliable)
+- Cloudflare (Fast, privacy-focused): `1.1.1.1` - `1.0.0.1`
+- Quad9 (Blocks malware): `9.9.9.9` - `149.112.112.112`
+- DNS0.EU (EU-based, zero-logging): `193.110.81.0` - `185.253.5.0`
+- DNS4EU: `86.54.11.1` - `86.54.11.201`
+- Google (Reliable): `8.8.8.8` - `8.8.4.4`
 
 ---
 
