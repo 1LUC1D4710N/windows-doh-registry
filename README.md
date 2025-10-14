@@ -30,11 +30,11 @@
 
 **Option B (PowerShell Alternative):**
 ```powershell
-# Example: If you downloaded and extracted the ZIP to Downloads
-Start-Process "$env:USERPROFILE\Downloads\windows-doh-registry-main\DoH-Well-Known-Servers\Doh Well Known Servers.reg"
+# Navigate to the folder where you extracted/saved the file, then run:
+Start-Process ".\Doh Well Known Servers.reg"
 
-# Or use your actual path where you saved the file
-# Start-Process "C:\Your\Actual\Path\Doh Well Known Servers.reg"
+# Or if you're not in the folder, provide the full path:
+# Start-Process "D:\Your\Actual\Path\Doh Well Known Servers.reg"
 ```
 
 This opens the file and prompts you to merge it (requires Administrator permission).
