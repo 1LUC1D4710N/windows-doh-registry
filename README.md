@@ -7,14 +7,33 @@
 ## 🚀 How to Install (Quick Start)
 
 ### Step 1: Download the Registry File
-Get this file: `DoH-Well-Known-Servers\Doh Well Known Servers.reg`
+
+**Method 1: Download the entire repository (Easiest)**
+1. Click the green **"Code"** button at the top of this page
+2. Select **"Download ZIP"**
+3. Extract the ZIP file
+4. Find `DoH-Well-Known-Servers\Doh Well Known Servers.reg`
+
+**Method 2: Download just the registry file**
+1. Navigate to: `DoH-Well-Known-Servers` folder
+2. Click on: `Doh Well Known Servers.reg`
+3. Click the **"Raw"** button (top right)
+4. Right-click the page → **"Save As"** → Save as `Doh Well Known Servers.reg`
 
 ### Step 2: Import It
-**Option A:** Double-click the `.reg` file and click "Yes"
 
-**Option B:** Run this command:
+**Option A (Easiest):** 
+- Navigate to where you saved/extracted the file
+- **Double-click** `Doh Well Known Servers.reg`
+- Click **"Yes"** when prompted
+
+**Option B (Command Line):**
 ```powershell
-reg import "DoH-Well-Known-Servers\Doh Well Known Servers.reg"
+# Navigate to the folder with the .reg file
+cd "path\to\your\download\folder"
+
+# Import it
+reg import "Doh Well Known Servers.reg"
 ```
 
 ### Step 3: Restart DNS Service
