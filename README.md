@@ -127,6 +127,7 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📖 Additional Documentation
 
+- **[DNS-PROVIDERS-REFERENCE.md](DNS-PROVIDERS-REFERENCE.md)** - Complete DNS provider details, IPv6 addresses, and official sources
 - **[WHY-THIS-MATTERS.md](WHY-THIS-MATTERS.md)** - The full story behind this project + Microsoft collaboration invite
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history
 
