@@ -29,8 +29,11 @@
 
 **Option B (Command Line):**
 ```powershell
-# Navigate to the folder with the .reg file
-cd "path\to\your\download\folder"
+# Example: If you extracted to Downloads folder
+cd "$env:USERPROFILE\Downloads\windows-doh-registry-main\DoH-Well-Known-Servers"
+
+# Or navigate to wherever you saved it
+# cd "C:\Your\Actual\Path\Here"
 
 # Import it
 reg import "Doh Well Known Servers.reg"
