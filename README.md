@@ -20,14 +20,17 @@
 3. Click the **"Raw"** button (top right)
 4. Right-click the page → **"Save As"** → Save as `Doh Well Known Servers.reg`
 
-### Step 2: Import It
+### Step 2: Import It (Requires Administrator)
 
-**Option A (Easiest):** 
+**Option A (Easiest - Recommended):** 
 - Navigate to where you saved/extracted the file
-- **Double-click** `Doh Well Known Servers.reg`
-- Click **"Yes"** when prompted
+- **Right-click** `Doh Well Known Servers.reg`
+- Select **"Merge"** or just **double-click** it
+- Click **"Yes"** when Windows asks for administrator permission
 
 **Option B (Command Line):**
+⚠️ **Must run PowerShell as Administrator**
+- Right-click PowerShell → "Run as Administrator"
 ```powershell
 # Example: If you downloaded and extracted the ZIP to Downloads
 cd "$env:USERPROFILE\Downloads\windows-doh-registry-main\DoH-Well-Known-Servers"
