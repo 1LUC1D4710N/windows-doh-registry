@@ -42,7 +42,7 @@ Get-DnsClientDohServerAddress
 
 You should see your DNS IP with a DoH template URL!
 
-**📖 Need detailed help?** See [INSTALLATION-GUIDE.md](INSTALLATION-GUIDE.md) for troubleshooting.
+**Note:** If you see "False" values in the output, that's normal! It means DoH is configured and working correctly.
 
 ---
 
@@ -140,7 +140,6 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📖 Additional Documentation
 
-- **[INSTALLATION-GUIDE.md](INSTALLATION-GUIDE.md)** - Detailed installation steps and troubleshooting
 - **[WHY-THIS-MATTERS.md](WHY-THIS-MATTERS.md)** - The full story behind this project + Microsoft collaboration invite
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history
 
