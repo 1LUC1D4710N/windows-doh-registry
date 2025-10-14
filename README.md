@@ -4,45 +4,35 @@
 
 ---
 
-## 🚀 How to Install (Quick Start)
+## 🚀 How to Install (3 Simple Steps)
 
-### Step 1: Download the Registry File
+### Step 1: Download & Extract
+1. Click the green **"Code"** button → **"Download ZIP"**
+2. Extract the ZIP file (works on any drive - C:, D:, etc.)
+3. Find: `DoH-Well-Known-Servers\Doh Well Known Servers.reg`
 
-**Method 1: Download the entire repository (Easiest)**
-1. Click the green **"Code"** button at the top of this page
-2. Select **"Download ZIP"**
-3. Extract the ZIP file
-4. Find `DoH-Well-Known-Servers\Doh Well Known Servers.reg`
+### Step 2: Import the Registry File
+- **Right-click** → `Doh Well Known Servers.reg` → Select **"Merge"**
+- Click **"Yes"** when Windows asks for permission
+- That's it! DoH providers are now added to Windows
 
-**Method 2: Download just the registry file**
-1. Navigate to: `DoH-Well-Known-Servers` folder
-2. Click on: `Doh Well Known Servers.reg`
-3. Click the **"Raw"** button (top right)
-4. Right-click the page → **"Save As"** → Save as `Doh Well Known Servers.reg`
+### Step 3: Set Your DNS (Choose One Provider)
+**Windows 11:** Settings → Network & Internet → Properties → DNS server assignment → Edit  
+**Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
 
-### Step 2: Import It (Requires Administrator)
+**Popular DNS IPs to try:**
+- Cloudflare: `1.1.1.1` (Fast, privacy-focused)
+- Quad9: `9.9.9.9` (Blocks malware)
+- DNS0.EU: `193.110.81.0` (EU-based, zero-logging)
 
-- Navigate to where you saved/extracted the file
-- **Right-click** `Doh Well Known Servers.reg`
-- Select **"Merge"** or just **double-click** it
-- Click **"Yes"** when Windows asks for administrator permission
+---
 
-### Step 3: Restart DNS Service
-```powershell
-Restart-Service -Name Dnscache
-```
-
-### Step 4: Set Your DNS
-Go to **Settings → Network → Change adapter options** → Right-click your connection → **Properties** → **Internet Protocol Version 4** → Enter a DNS IP address (examples below)
-
-### Step 5: Verify It's Working
+### ✅ Verify It Works (Optional)
+Open PowerShell and run:
 ```powershell
 Get-DnsClientDohServerAddress
 ```
-
-You should see your DNS IP with a DoH template URL!
-
-**Note:** If you see "False" values in the output, that's normal! It means DoH is configured and working correctly.
+You should see DNS IPs with DoH template URLs. If you see "False" values, **that's normal** - it means DoH is working correctly!
 
 ---
 
