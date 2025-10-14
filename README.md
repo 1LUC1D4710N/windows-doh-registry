@@ -12,8 +12,6 @@
 3. Click **"Yes"** when Windows asks for permission
 4. Done! All 147 DoH providers are now available in Windows
 
-**Note:** Works on any drive (C:, D:, E:, etc.) - the registry file modifies Windows settings, not drive-specific files.
-
 ### Step 2: Choose Your DNS Provider
 **Windows 11:** Settings → Network & Internet → Properties → DNS server assignment → Edit  
 **Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
