@@ -4,26 +4,25 @@
 
 ---
 
-## 🚀 How to Install (3 Simple Steps)
+## 🚀 How to Install (2 Simple Steps)
 
-### Step 1: Download & Extract
-1. Click the green **"Code"** button → **"Download ZIP"**
-2. Extract the ZIP file (works on any drive - C:, D:, etc.)
-3. Find: `DoH-Well-Known-Servers\Doh Well Known Servers.reg`
+### Step 1: Download & Import the Registry File
+1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
+2. **Right-click** the downloaded file → Select **"Merge"**
+3. Click **"Yes"** when Windows asks for permission
+4. Done! All 147 DoH providers are now available in Windows
 
-### Step 2: Import the Registry File
-- **Right-click** → `Doh Well Known Servers.reg` → Select **"Merge"**
-- Click **"Yes"** when Windows asks for permission
-- That's it! DoH providers are now added to Windows
+**Note:** Works on any drive (C:, D:, E:, etc.) - the registry file modifies Windows settings, not drive-specific files.
 
-### Step 3: Set Your DNS (Choose One Provider)
+### Step 2: Choose Your DNS Provider
 **Windows 11:** Settings → Network & Internet → Properties → DNS server assignment → Edit  
 **Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
 
-**Popular DNS IPs to try:**
-- Cloudflare: `1.1.1.1` (Fast, privacy-focused)
-- Quad9: `9.9.9.9` (Blocks malware)
-- DNS0.EU: `193.110.81.0` (EU-based, zero-logging)
+**Popular DNS IPs:**
+- `1.1.1.1` - Cloudflare (Fast, privacy-focused)
+- `9.9.9.9` - Quad9 (Blocks malware)
+- `193.110.81.0` - DNS0.EU (EU-based, zero-logging)
+- `8.8.8.8` - Google (Reliable)
 
 ---
 
