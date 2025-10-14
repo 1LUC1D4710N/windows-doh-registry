@@ -22,22 +22,10 @@
 
 ### Step 2: Import It (Requires Administrator)
 
-**Option A (Easiest - Recommended):** 
 - Navigate to where you saved/extracted the file
 - **Right-click** `Doh Well Known Servers.reg`
 - Select **"Merge"** or just **double-click** it
 - Click **"Yes"** when Windows asks for administrator permission
-
-**Option B (PowerShell Alternative):**
-```powershell
-# Navigate to the folder where you extracted/saved the file, then run:
-Start-Process ".\Doh Well Known Servers.reg"
-
-# Or if you're not in the folder, provide the full path:
-# Start-Process "D:\Your\Actual\Path\Doh Well Known Servers.reg"
-```
-
-This opens the file and prompts you to merge it (requires Administrator permission).
 
 ### Step 3: Restart DNS Service
 ```powershell
