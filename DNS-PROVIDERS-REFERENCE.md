@@ -11,7 +11,12 @@ Use these hostnames in Android/iOS Private DNS settings:
 - `cloudflare-dns.com` - Cloudflare (Standard)
 - `dns.google` - Google Public DNS
 - `dns.quad9.net` - Quad9 (Security)
-- `freedns.controld.com` - Control D
+- `p0.freedns.controld.com` - Control D (Unfiltered)
+- `p1.freedns.controld.com` - Control D (Malware)
+- `p2.freedns.controld.com` - Control D (Malware + Ads)
+- `p3.freedns.controld.com` - Control D (Malware + Ads + Social)
+- `family.freedns.controld.com` - Control D (Family/Parental controls)
+- `uncensored.freedns.controld.com` - Control D (Uncensored)
 - `dns0.eu` - DNS0.EU
 - `protective.joindns4.eu` - DNS4EU (Protective)
 - `dns.adguard-dns.com` - AdGuard DNS
