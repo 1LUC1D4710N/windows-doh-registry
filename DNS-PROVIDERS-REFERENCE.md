@@ -161,6 +161,11 @@ Use these hostnames in Android/iOS Private DNS settings:
 | Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
 |---------|------|------|--------------|---------------------|
 | Base (No filtering) | 194.242.2.2 | 2a07:e340::2 | https://dns.mullvad.net/dns-query | `dns.mullvad.net` |
+| Ad-blocking | 194.242.2.3 | 2a07:e340::3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
+| Base (Ads + Trackers + Malware) | 194.242.2.4 | 2a07:e340::4 | https://base.dns.mullvad.net/dns-query | `base.dns.mullvad.net` |
+| Extended (+ Social Media blocking) | 194.242.2.5 | 2a07:e340::5 | https://extended.dns.mullvad.net/dns-query | `extended.dns.mullvad.net` |
+| Family (+ Adult + Gambling blocking) | 194.242.2.6 | 2a07:e340::6 | https://family.dns.mullvad.net/dns-query | `family.dns.mullvad.net` |
+| All (Maximum blocking) | 194.242.2.9 | 2a07:e340::9 | https://all.dns.mullvad.net/dns-query | `all.dns.mullvad.net` |
 
 **Source:** https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/
 
@@ -221,24 +226,6 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 14. Mullvad DNS (Extended Variants) ❌ (NEW)
-**Location:** Sweden  
-**Provider:** Mullvad VPN (Amagicom AB)  
-**Privacy Policy:** https://mullvad.net/privacy
-
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
-|---------|------|------|--------------|---------------------|
-| Base (No filtering) | 194.242.2.2 | 2a07:e340::2 | https://dns.mullvad.net/dns-query | `dns.mullvad.net` |
-| Ad-blocking | 194.242.2.3 | 2a07:e340::3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
-| Base (Ads + Trackers + Malware) | 194.242.2.4 | 2a07:e340::4 | https://base.dns.mullvad.net/dns-query | `base.dns.mullvad.net` |
-| Extended (+ Social Media blocking) | 194.242.2.5 | 2a07:e340::5 | https://extended.dns.mullvad.net/dns-query | `extended.dns.mullvad.net` |
-| Family (+ Adult + Gambling blocking) | 194.242.2.6 | 2a07:e340::6 | https://family.dns.mullvad.net/dns-query | `family.dns.mullvad.net` |
-| All (Maximum blocking) | 194.242.2.9 | 2a07:e340::9 | https://all.dns.mullvad.net/dns-query | `all.dns.mullvad.net` |
-
-**Source:** https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/
-
----
-
 ## 🔐 Privacy & Security Considerations
 
 ### What DoH Provides:
@@ -265,15 +252,15 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ## 📊 Total Configurations
 
-This registry includes **147 DNS configurations** across **14 providers**:
+This registry includes **149 DNS configurations** across **13 providers**:
 - 3 pre-installed in Windows (Cloudflare, Google, Quad9)
-- 11 additional providers (144 new configurations)
+- 10 additional providers (146 new configurations)
   - Control D (6 profiles)
   - DNS0.EU (3 variants)
   - DNS4EU/JoinDNS4 (4 variants)
   - NextDNS (customizable)
   - CleanBrowsing (1 variant)
-  - Mullvad DNS (5 variants)
+  - Mullvad DNS (6 variants)
   - AdGuard DNS (3 variants)
   - Cisco Umbrella/OpenDNS (3 variants)
   - LibreDNS (1 variant)
