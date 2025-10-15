@@ -1,6 +1,24 @@
 # DNS Providers Reference Guide
 
-Complete reference for all 12 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, and official sources.
+Complete reference for all 14 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
+
+---
+
+## 📱 Quick Reference: Private DNS Hostnames for Smartphones
+
+Use these hostnames in Android/iOS Private DNS settings:
+
+- `cloudflare-dns.com` - Cloudflare (Standard)
+- `dns.google` - Google Public DNS
+- `dns.quad9.net` - Quad9 (Security)
+- `freedns.controld.com` - Control D
+- `dns0.eu` - DNS0.EU
+- `protective.joindns4.eu` - DNS4EU (Protective)
+- `dns.adguard-dns.com` - AdGuard DNS
+- `dns.mullvad.net` - Mullvad DNS
+- `doh.cleanbrowsing.org` - CleanBrowsing
+- `doh.libredns.gr` - LibreDNS
+- `anycast.uncensoreddns.org` - UncensoredDNS
 
 ---
 
@@ -11,11 +29,11 @@ Complete reference for all 12 DNS providers included in this registry, with IPv4
 **Provider:** Cloudflare, Inc.  
 **Privacy Policy:** https://www.cloudflare.com/privacypolicy/
 
-| Variant | IPv4 | IPv6 | DoH Template |
-|---------|------|------|--------------|
-| Standard | 1.1.1.1, 1.0.0.1 | 2606:4700:4700::1111, 2606:4700:4700::1001 | https://cloudflare-dns.com/dns-query |
-| Security (Malware blocking) | 1.1.1.2, 1.0.0.2 | 2606:4700:4700::1112, 2606:4700:4700::1002 | https://security.cloudflare-dns.com/dns-query |
-| Family (Malware + Adult blocking) | 1.1.1.3, 1.0.0.3 | 2606:4700:4700::1113, 2606:4700:4700::1003 | https://family.cloudflare-dns.com/dns-query |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+|---------|------|------|--------------|---------------------|
+| Standard | 1.1.1.1, 1.0.0.1 | 2606:4700:4700::1111, 2606:4700:4700::1001 | https://cloudflare-dns.com/dns-query | `cloudflare-dns.com` |
+| Security (Malware blocking) | 1.1.1.2, 1.0.0.2 | 2606:4700:4700::1112, 2606:4700:4700::1002 | https://security.cloudflare-dns.com/dns-query | `security.cloudflare-dns.com` |
+| Family (Malware + Adult blocking) | 1.1.1.3, 1.0.0.3 | 2606:4700:4700::1113, 2606:4700:4700::1003 | https://family.cloudflare-dns.com/dns-query | `family.cloudflare-dns.com` |
 
 **Source:** https://developers.cloudflare.com/1.1.1.1/
 
@@ -26,9 +44,10 @@ Complete reference for all 12 DNS providers included in this registry, with IPv4
 **Provider:** Google LLC  
 **Privacy Policy:** https://developers.google.com/speed/public-dns/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template |
-|---------|------|------|--------------|
-| Standard | 8.8.8.8, 8.8.4.4 | 2001:4860:4860::8888, 2001:4860:4860::8844 | https://dns.google/dns-query |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+|---------|------|------|--------------|---------------------|
+| Standard | 8.8.8.8, 8.8.4.4 | 2001:4860:4860::8888, 2001:4860:4860::8844 | https://dns.google/dns-query | `dns.google` |
+| DNS64 | 8.8.8.8 | 2001:4860:4860::64, 2001:4860:4860::6464 | https://dns64.dns.google/dns-query | `dns64.dns.google` |
 
 **Source:** https://developers.google.com/speed/public-dns
 
@@ -158,11 +177,57 @@ Complete reference for all 12 DNS providers included in this registry, with IPv4
 **Provider:** Cisco Systems  
 **Privacy Policy:** https://www.cisco.com/c/en/us/about/legal/privacy-full.html
 
-| Variant | IPv4 | DoH Template |
-|---------|------|--------------|
-| Standard | 208.67.222.222 | https://doh.opendns.com/dns-query |
+| Variant | IPv4 | DoH Template | Private DNS Hostname |
+|---------|------|--------------|---------------------|
+| Standard | 208.67.222.222, 208.67.220.220 | https://doh.opendns.com/dns-query | `doh.opendns.com` |
+| FamilyShield | 208.67.222.123, 208.67.220.123 | https://doh.familyshield.opendns.com/dns-query | `doh.familyshield.opendns.com` |
+| Sandbox | Various | https://doh.sandbox.opendns.com/dns-query | `doh.sandbox.opendns.com` |
 
 **Source:** https://support.opendns.com/hc/en-us/articles/360038086532
+
+---
+
+### 12. LibreDNS ❌ (NEW)
+**Location:** Germany  
+**Provider:** LibreOps  
+**Privacy Policy:** https://libredns.gr/privacy/
+
+| Variant | IPv4 | DoH Template | Private DNS Hostname |
+|---------|------|--------------|---------------------|
+| No Ads | 116.202.176.26 | https://doh.libredns.gr/ads | `doh.libredns.gr` |
+
+**Source:** https://libredns.gr/
+
+---
+
+### 13. UncensoredDNS ❌ (NEW)
+**Location:** Denmark  
+**Provider:** Unicast  
+**Privacy Policy:** https://blog.uncensoreddns.org/dns-privacy/
+
+| Variant | IPv4 | DoH Template | Private DNS Hostname |
+|---------|------|--------------|---------------------|
+| Anycast | 91.239.100.100 | https://anycast.uncensoreddns.org/dns-query | `anycast.uncensoreddns.org` |
+| Unicast (DK) | 89.233.43.71 | https://unicast.uncensoreddns.org/dns-query | `unicast.uncensoreddns.org` |
+
+**Source:** https://uncensoreddns.org/
+
+---
+
+### 14. Mullvad DNS (Extended Variants) ❌ (NEW)
+**Location:** Sweden  
+**Provider:** Mullvad VPN (Amagicom AB)  
+**Privacy Policy:** https://mullvad.net/privacy
+
+| Variant | IPv4 | DoH Template | Private DNS Hostname |
+|---------|------|--------------|---------------------|
+| Base (No filtering) | 194.242.2.2 | https://base.dns.mullvad.net/dns-query | `base.dns.mullvad.net` |
+| Ad-blocking | 194.242.2.3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
+| Extended (Ads + Trackers + Malware) | 194.242.2.4 | https://extended.dns.mullvad.net/dns-query | `extended.dns.mullvad.net` |
+| Family (Ads + Adult + Gambling) | 194.242.2.5 | https://family.dns.mullvad.net/dns-query | `family.dns.mullvad.net` |
+| All (Maximum blocking) | 194.242.2.9 | https://all.dns.mullvad.net/dns-query | `all.dns.mullvad.net` |
+
+**Source:** https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/
 
 ---
 
@@ -192,9 +257,19 @@ Complete reference for all 12 DNS providers included in this registry, with IPv4
 
 ## 📊 Total Configurations
 
-This registry includes **147 DNS configurations** across **12 providers**:
+This registry includes **147 DNS configurations** across **14 providers**:
 - 3 pre-installed in Windows (Cloudflare, Google, Quad9)
-- 9 additional providers (144 new configurations)
+- 11 additional providers (144 new configurations)
+  - Control D (6 profiles)
+  - DNS0.EU (3 variants)
+  - DNS4EU/JoinDNS4 (4 variants)
+  - NextDNS (customizable)
+  - CleanBrowsing (1 variant)
+  - Mullvad DNS (5 variants)
+  - AdGuard DNS (3 variants)
+  - Cisco Umbrella/OpenDNS (3 variants)
+  - LibreDNS (1 variant)
+  - UncensoredDNS (2 locations)
 
 All configurations verified against official documentation as of October 2025.
 

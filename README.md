@@ -1,6 +1,6 @@
 # Windows DoH Registry - More DNS Privacy Options
 
-**Expand Windows DNS over HTTPS (DoH) support from 3 providers to 12 providers with one registry import.**
+**Expand Windows DNS over HTTPS (DoH) support from 3 providers to 14 providers with one registry import.**
 
 ---
 
@@ -85,14 +85,14 @@ Microsoft's Windows has supported DNS over HTTPS since 2020, but only includes *
 - Google (8.8.8.8)
 - Quad9 (9.9.9.9)
 
-This registry adds **9 more privacy-focused DNS providers** with 147 total configurations, giving you more choices for encrypted DNS.
+This registry adds **11 more privacy-focused DNS providers** with 147 total configurations, giving you more choices for encrypted DNS.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 WHAT YOU GET                                            │
 ├─────────────────────────────────────────────────────────────┤
 │  ✅ 147 DNS configurations (Microsoft has 3)                │
-│  ✅ 12 DNS providers (Microsoft has 3)                      │
+│  ✅ 14 DNS providers (Microsoft has 3)                      │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe filtering options                           │
 │  ✅ Ad-blocking DNS variants                                │
@@ -138,7 +138,7 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 ## 📊 Quick Stats
 
 - **147 configurations** (Microsoft has 3)
-- **12 providers** (Microsoft has 3)
+- **14 providers** (Microsoft has 3)
 - **100% verified** against official sources
 - **Years of research** compiled into one registry file
 - **Ready to use** right now
