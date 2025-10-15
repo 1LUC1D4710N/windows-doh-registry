@@ -15,7 +15,12 @@ Use these hostnames in Android/iOS Private DNS settings:
 - `dns0.eu` - DNS0.EU
 - `protective.joindns4.eu` - DNS4EU (Protective)
 - `dns.adguard-dns.com` - AdGuard DNS
-- `dns.mullvad.net` - Mullvad DNS
+- `dns.mullvad.net` - Mullvad DNS (Base)
+- `adblock.dns.mullvad.net` - Mullvad DNS (Ad-blocking)
+- `base.dns.mullvad.net` - Mullvad DNS (Malware blocking)
+- `extended.dns.mullvad.net` - Mullvad DNS (Extended + Social)
+- `family.dns.mullvad.net` - Mullvad DNS (Family safe)
+- `all.dns.mullvad.net` - Mullvad DNS (Maximum blocking)
 - `doh.cleanbrowsing.org` - CleanBrowsing
 - `doh.libredns.gr` - LibreDNS
 - `anycast.uncensoreddns.org` - UncensoredDNS
@@ -153,9 +158,9 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Mullvad VPN (Amagicom AB)  
 **Privacy Policy:** https://mullvad.net/privacy
 
-| Variant | IPv4 | DoH Template |
-|---------|------|--------------|
-| Ad-blocking | 194.242.2.2 | https://dns.mullvad.net/dns-query |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+|---------|------|------|--------------|---------------------|
+| Base (No filtering) | 194.242.2.2 | 2a07:e340::2 | https://dns.mullvad.net/dns-query | `dns.mullvad.net` |
 
 **Source:** https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/
 
@@ -221,13 +226,14 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Mullvad VPN (Amagicom AB)  
 **Privacy Policy:** https://mullvad.net/privacy
 
-| Variant | IPv4 | DoH Template | Private DNS Hostname |
-|---------|------|--------------|---------------------|
-| Base (No filtering) | 194.242.2.2 | https://base.dns.mullvad.net/dns-query | `base.dns.mullvad.net` |
-| Ad-blocking | 194.242.2.3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
-| Extended (Ads + Trackers + Malware) | 194.242.2.4 | https://extended.dns.mullvad.net/dns-query | `extended.dns.mullvad.net` |
-| Family (Ads + Adult + Gambling) | 194.242.2.5 | https://family.dns.mullvad.net/dns-query | `family.dns.mullvad.net` |
-| All (Maximum blocking) | 194.242.2.9 | https://all.dns.mullvad.net/dns-query | `all.dns.mullvad.net` |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+|---------|------|------|--------------|---------------------|
+| Base (No filtering) | 194.242.2.2 | 2a07:e340::2 | https://dns.mullvad.net/dns-query | `dns.mullvad.net` |
+| Ad-blocking | 194.242.2.3 | 2a07:e340::3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
+| Base (Ads + Trackers + Malware) | 194.242.2.4 | 2a07:e340::4 | https://base.dns.mullvad.net/dns-query | `base.dns.mullvad.net` |
+| Extended (+ Social Media blocking) | 194.242.2.5 | 2a07:e340::5 | https://extended.dns.mullvad.net/dns-query | `extended.dns.mullvad.net` |
+| Family (+ Adult + Gambling blocking) | 194.242.2.6 | 2a07:e340::6 | https://family.dns.mullvad.net/dns-query | `family.dns.mullvad.net` |
+| All (Maximum blocking) | 194.242.2.9 | 2a07:e340::9 | https://all.dns.mullvad.net/dns-query | `all.dns.mullvad.net` |
 
 **Source:** https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/
 
