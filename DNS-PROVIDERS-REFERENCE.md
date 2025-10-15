@@ -214,13 +214,13 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ### 13. UncensoredDNS ❌ (NEW)
 **Location:** Denmark  
-**Provider:** Unicast  
+**Provider:** Thomas Steen Rasmussen (Unicast)  
 **Privacy Policy:** https://blog.uncensoreddns.org/dns-privacy/
 
-| Variant | IPv4 | DoH Template | Private DNS Hostname |
-|---------|------|--------------|---------------------|
-| Anycast | 91.239.100.100 | https://anycast.uncensoreddns.org/dns-query | `anycast.uncensoreddns.org` |
-| Unicast (DK) | 89.233.43.71 | https://unicast.uncensoreddns.org/dns-query | `unicast.uncensoreddns.org` |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+|---------|------|------|--------------|---------------------|
+| Anycast | 91.239.100.100 | 2001:67c:28a4:: | https://anycast.uncensoreddns.org/dns-query | `anycast.uncensoreddns.org` |
+| Unicast (Copenhagen, DK) | 89.233.43.71 | 2a01:3a0:53:53:: | https://unicast.uncensoreddns.org/dns-query | `unicast.uncensoreddns.org` |
 
 **Source:** https://uncensoreddns.org/
 
