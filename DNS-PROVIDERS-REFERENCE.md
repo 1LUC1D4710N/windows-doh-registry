@@ -83,14 +83,14 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Control D Inc.  
 **Privacy Policy:** https://controld.com/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template |
-|---------|------|------|--------------|
-| P0 - Unfiltered | 76.76.2.0, 76.76.10.0 | 2606:1a40::, 2606:1a40:1:: | https://freedns.controld.com/p0 |
-| P1 - Malware | 76.76.2.1, 76.76.10.1 | 2606:1a40::1, 2606:1a40:1::1 | https://freedns.controld.com/p1 |
-| P2 - Malware + Ads | 76.76.2.2, 76.76.10.2 | 2606:1a40::2, 2606:1a40:1::2 | https://freedns.controld.com/p2 |
-| P3 - Malware + Ads + Social | 76.76.2.3, 76.76.10.3 | 2606:1a40::3, 2606:1a40:1::3 | https://freedns.controld.com/p3 |
-| Family - Parental controls | 76.76.2.4, 76.76.10.4 | 2606:1a40::4, 2606:1a40:1::4 | https://freedns.controld.com/family |
-| Uncensored | 76.76.2.5, 76.76.10.5 | 2606:1a40::5, 2606:1a40:1::5 | https://freedns.controld.com/uncensored |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| P0 - Unfiltered | 76.76.2.0, 76.76.10.0 | 2606:1a40::, 2606:1a40:1:: | https://freedns.controld.com/p0 | `p0.freedns.controld.com` |
+| P1 - Malware | 76.76.2.1, 76.76.10.1 | 2606:1a40::1, 2606:1a40:1::1 | https://freedns.controld.com/p1 | `p1.freedns.controld.com` |
+| P2 - Malware + Ads | 76.76.2.2, 76.76.10.2 | 2606:1a40::2, 2606:1a40:1::2 | https://freedns.controld.com/p2 | `p2.freedns.controld.com` |
+| P3 - Malware + Ads + Social | 76.76.2.3, 76.76.10.3 | 2606:1a40::3, 2606:1a40:1::3 | https://freedns.controld.com/p3 | `p3.freedns.controld.com` |
+| Family - Parental controls | 76.76.2.4, 76.76.10.4 | 2606:1a40::4, 2606:1a40:1::4 | https://freedns.controld.com/family | `family.freedns.controld.com` |
+| Uncensored | 76.76.2.5, 76.76.10.5 | 2606:1a40::5, 2606:1a40:1::5 | https://freedns.controld.com/uncensored | `uncensored.freedns.controld.com` |
 
 **Source:** https://controld.com/free-dns
 
