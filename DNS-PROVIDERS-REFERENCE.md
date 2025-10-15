@@ -7,6 +7,7 @@ Complete reference for all 14 DNS providers included in this registry, with IPv4
 ## 📱 Quick Reference: Private DNS Hostnames for Smartphones
 
 Use these hostnames in Android/iOS Private DNS settings:
+- `dns.nextdns.io` - NextDNS (default, use with or without profile ID)
 
 - `cloudflare-dns.com` - Cloudflare (Standard)
 - `dns.google` - Google Public DNS
@@ -141,11 +142,11 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** NextDNS Inc.  
 **Privacy Policy:** https://nextdns.io/privacy
 
-| IPv4 | DoH Template |
-|------|--------------|
-| 45.90.28.0 | https://dns.nextdns.io/ |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Anycast | 45.90.28.0, 45.90.30.0 | 2a07:a8c0::, 2a07:a8c1:: | https://dns.nextdns.io/ | `dns.nextdns.io` |
 
-**Note:** NextDNS is primarily configuration-based. Users should create custom profiles at https://nextdns.io/
+**Note:** NextDNS is primarily configuration-based. Users should create custom profiles at https://nextdns.io/. For DoT/Private DNS, use `dns.nextdns.io` or `profile-id.dns.nextdns.io` (replace `profile-id` with your NextDNS profile ID for custom filtering).
 
 **Source:** https://help.nextdns.io/t/g9hmv0a/what-are-the-nextdns-anycast-ips
 
