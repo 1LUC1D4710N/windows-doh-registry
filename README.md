@@ -23,10 +23,14 @@
   `https://security.cloudflare-dns.com/dns-query`
   
 - Quad9 (Blocks malware):
-  IPv4                          `9.9.9.9` - `149.112.112.112`
-  IPv6                          `2620:fe::fe` - `2620:fe::9`
-  DoH                           `https://dns.quad9.net/dns-query`
-  Private DNS (smartphone DNS)  `dns.quad9.net`
+  IPv4
+  `9.9.9.9` - `149.112.112.112`
+  IPv6
+  `2620:fe::fe` - `2620:fe::9`
+  DoH
+  `https://dns.quad9.net/dns-query`
+  Private DNS (smartphone DNS)
+  `dns.quad9.net`
   
 - DNS0.EU (EU-based, zero-logging):
   `193.110.81.0` - `185.253.5.0`
