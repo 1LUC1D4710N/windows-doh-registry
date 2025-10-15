@@ -20,7 +20,9 @@ Use these hostnames in Android/iOS Private DNS settings:
 - `uncensored.freedns.controld.com` - Control D (Uncensored)
 - `dns0.eu` - DNS0.EU
 - `protective.joindns4.eu` - DNS4EU (Protective)
-- `dns.adguard-dns.com` - AdGuard DNS
+- `dns.adguard-dns.com` - AdGuard DNS (Default)
+- `family.adguard-dns.com` - AdGuard DNS (Family)
+- `unfiltered.adguard-dns.com` - AdGuard DNS (Unfiltered)
 - `dns.mullvad.net` - Mullvad DNS (Base)
 - `adblock.dns.mullvad.net` - Mullvad DNS (Ad-blocking)
 - `base.dns.mullvad.net` - Mullvad DNS (Malware blocking)
@@ -186,13 +188,16 @@ Use these hostnames in Android/iOS Private DNS settings:
 ---
 
 ### 10. AdGuard DNS ❌ (NEW)
+
 **Location:** Cyprus  
 **Provider:** AdGuard Software Ltd.  
 **Privacy Policy:** https://adguard.com/privacy/dns.html
 
-| Variant | IPv4 | DoH Template |
-|---------|------|------|
-| Default (Ad-blocking) | 94.140.14.14 | https://dns.adguard-dns.com/dns-query |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Default (Ad-blocking) | 94.140.14.14, 94.140.15.15 | 2a10:50c0::ad1:ff, 2a10:50c0::ad2:ff | https://dns.adguard-dns.com/dns-query | `dns.adguard-dns.com` |
+| Family (Adult content blocking) | 94.140.14.15, 94.140.15.16 | 2a10:50c0::bad1:ff, 2a10:50c0::bad2:ff | https://family.adguard-dns.com/dns-query | `family.adguard-dns.com` |
+| Unfiltered | 94.140.14.140, 94.140.14.141 | 2a10:50c0::1:ff, 2a10:50c0::2:ff | https://unfiltered.adguard-dns.com/dns-query | `unfiltered.adguard-dns.com` |
 
 **Source:** https://adguard-dns.io/
 
