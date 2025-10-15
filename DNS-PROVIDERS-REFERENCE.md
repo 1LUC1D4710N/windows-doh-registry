@@ -295,21 +295,12 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
+
 ## 📊 Total Configurations
 
-This registry includes **149 DNS configurations** across **13 providers**:
+This registry includes **137 DNS configurations** across **14 providers**:
 - 3 pre-installed in Windows (Cloudflare, Google, Quad9)
-- 10 additional providers (146 new configurations)
-  - Control D (6 profiles)
-  - DNS0.EU (3 variants)
-  - DNS4EU/JoinDNS4 (4 variants)
-  - NextDNS (customizable)
-  - CleanBrowsing (1 variant)
-  - Mullvad DNS (6 variants)
-  - AdGuard DNS (3 variants)
-  - Cisco Umbrella/OpenDNS (3 variants)
-  - LibreDNS (1 variant)
-  - UncensoredDNS (2 locations)
+- 11 additional providers
 
 All configurations verified against official documentation as of October 2025.
 
