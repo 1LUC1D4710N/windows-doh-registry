@@ -42,7 +42,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Cloudflare, Inc.  
 **Privacy Policy:** https://www.cloudflare.com/privacypolicy/
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | Standard | 1.1.1.1, 1.0.0.1 | 2606:4700:4700::1111, 2606:4700:4700::1001 | https://cloudflare-dns.com/dns-query | `cloudflare-dns.com`<br>Also: `one.one.one.one`, `1dot1dot1dot1.cloudflare-dns.com` |
 | Security (Malware blocking) | 1.1.1.2, 1.0.0.2 | 2606:4700:4700::1112, 2606:4700:4700::1002 | https://security.cloudflare-dns.com/dns-query | `security.cloudflare-dns.com` |
@@ -59,7 +59,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Google LLC  
 **Privacy Policy:** https://developers.google.com/speed/public-dns/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------|
 | Standard | 8.8.8.8, 8.8.4.4 | 2001:4860:4860::8888, 2001:4860:4860::8844 | https://dns.google/dns-query | `dns.google` |
 | DNS64 (IPv6 only) | - | 2001:4860:4860::6464, 2001:4860:4860::64 | https://dns64.dns.google/dns-query | `dns64.dns.google` |
@@ -75,7 +75,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Quad9 Foundation  
 **Privacy Policy:** https://quad9.net/privacy/policy/
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | Standard (Malware blocking, DNSSEC) | 9.9.9.9, 149.112.112.112 | 2620:fe::fe, 2620:fe::9 | https://dns.quad9.net/dns-query | `dns.quad9.net` |
 | Alternative Endpoint (Same filtering) | 9.9.9.9, 149.112.112.9 | 2620:fe::9, 2620:fe::fe:9 | https://dns9.quad9.net/dns-query | `dns9.quad9.net` |
@@ -91,7 +91,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Control D Inc.  
 **Privacy Policy:** https://controld.com/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | P0 - Unfiltered | 76.76.2.0, 76.76.10.0 | 2606:1a40::, 2606:1a40:1:: | https://freedns.controld.com/p0 | `p0.freedns.controld.com` |
 | P1 - Malware | 76.76.2.1, 76.76.10.1 | 2606:1a40::1, 2606:1a40:1::1 | https://freedns.controld.com/p1 | `p1.freedns.controld.com` |
@@ -110,7 +110,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** DNS0.EU Foundation  
 **Privacy Policy:** https://dns0.eu/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | Standard | 193.110.81.0, 185.253.5.0 | 2a0f:fc80::, 2a0f:fc81:: | https://dns0.eu/ | `dns0.eu` |
 | Kids (CSAM filter) | 193.110.81.1, 185.253.5.1 | 2a0f:fc80::1, 2a0f:fc81::1 | https://kids.dns0.eu/ | `kids.dns0.eu` |
@@ -127,7 +127,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** DNS4EU Consortium  
 **Privacy Policy:** https://www.dns4eu.eu/privacy-policy/
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | Protective | 86.54.11.1, 86.54.11.201 | 2a13:1001::86:54:11:1, 2a13:1001::86:54:11:201 | https://protective.joindns4.eu/dns-query | `protective.joindns4.eu` |
 | Child Safe | 86.54.11.12, 86.54.11.212 | 2a13:1001::86:54:11:12, 2a13:1001::86:54:11:212 | https://child.joindns4.eu/dns-query | `child.joindns4.eu` |
@@ -144,7 +144,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** NextDNS Inc.  
 **Privacy Policy:** https://nextdns.io/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | Anycast | 45.90.28.0, 45.90.30.0 | 2a07:a8c0::, 2a07:a8c1:: | https://dns.nextdns.io/ | `dns.nextdns.io` |
 
@@ -159,7 +159,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** CleanBrowsing  
 **Privacy Policy:** https://cleanbrowsing.org/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------------|
 | Family Filter (Blocks adult content, proxies/VPNs, mixed content sites) | 185.228.168.168, 185.228.169.168 | 2a0d:2a00:1::, 2a0d:2a00:2:: | https://doh.cleanbrowsing.org/doh/family-filter/ | `family-filter-dns.cleanbrowsing.org` |
 | Adult Filter (Blocks adult content only) | 185.228.168.10, 185.228.169.11 | 2a0d:2a00:1::1, 2a0d:2a00:2::1 | https://doh.cleanbrowsing.org/doh/adult-filter/ | `adult-filter-dns.cleanbrowsing.org` |
@@ -174,7 +174,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Mullvad VPN (Amagicom AB)  
 **Privacy Policy:** https://mullvad.net/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
+| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------|
 | Base (No filtering) | 194.242.2.2 | 2a07:e340::2 | https://dns.mullvad.net/dns-query | `dns.mullvad.net` |
 | Ad-blocking | 194.242.2.3 | 2a07:e340::3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
@@ -205,53 +205,19 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ### 11. Cisco Umbrella (OpenDNS) ❌ (NEW)
 
+
+
 **Location:** USA  
 **Provider:** Cisco Systems  
 **Privacy Policy:** https://www.cisco.com/c/en/us/about/legal/privacy-full.html
 
-#### DNS over HTTPS (DoH)
-| Variant        | IPv4                | IPv6                   | DoH Template URL                                 |
-|--------------- |---------------------|------------------------|-------------------------------------------------|
-| Standard       | 208.67.222.222      | 2620:119:35::35        | https://dns.opendns.com/dns-query                |
-|                | 208.67.220.220      | 2620:119:53::53        | https://dns.opendns.com/dns-query                |
-| FamilyShield   | 208.67.222.123      | 2620:119:35::123*      | https://familyshield.opendns.com/dns-query       |
-|                | 208.67.220.123      | 2620:119:53::123*      | https://familyshield.opendns.com/dns-query       |
-| Sandbox        | 208.67.222.2        | 2620:0:ccc::2          | https://sandbox.opendns.com/dns-query            |
-|                | 208.67.220.2        | 2620:0:ccd::2          | https://sandbox.opendns.com/dns-query            |
-
-*Note: IPv6 FamilyShield is not officially published by Cisco, but included for completeness if present in registry.*
-
-#### DNS over TLS (DoT)
-- **Cisco/OpenDNS does not publish public DoT endpoints for consumers.**
-- DoT is not supported in Windows registry; only DoH is supported.
+| Variant      | IPv4                              | IPv6                              | DoH Template URL                          | Hostname/Private DNS           |
+|------------- |-----------------------------------|-----------------------------------|--------------------------------------------|-------------------------------|
+| Standard     | 208.67.222.222, 208.67.220.220    | 2620:119:35::35, 2620:119:53::53  | https://dns.opendns.com/dns-query          | dns.opendns.com                |
+| FamilyShield | 208.67.222.123, 208.67.220.123    | 2620:119:35::123, 2620:119:53::123| https://familyshield.opendns.com/dns-query | familyshield.opendns.com       |
+| Sandbox      | 208.67.222.2, 208.67.220.2        | 2620:0:ccc::2, 2620:0:ccd::2      | https://sandbox.opendns.com/dns-query      | sandbox.opendns.com            |
 
 **Source:** https://support.opendns.com/hc/en-us/articles/360038086532
-
-#### Verification Steps
-
-1. **Check Registry Entries**
-  - Open `DoH-Well-Known-Servers\Doh Well Known Servers.reg` and confirm all above IPs and templates are present.
-
-2. **Test DNS Resolution (nslookup)**
-  - Set your DNS to a Cisco IP (e.g., 208.67.222.222) in your network adapter, then run:
-    ```powershell
-    nslookup example.com 208.67.222.222
-    ```
-    You should get a valid response from OpenDNS.
-
-3. **Verify DoH is Active (Windows)**
-  - Run:
-    ```powershell
-    Get-DnsClientDohServerAddress
-    ```
-    Look for Cisco IPs and their DoH templates in the output.
-
-**Summary:**
-- All Cisco/OpenDNS DoH endpoints and published IPs are present in the registry.
-- DoT is not supported for Windows registry.
-- No DNSCrypt or custom filtering endpoints are possible in this context.
-
-**Last verified:** October 2025
 
 ---
 
