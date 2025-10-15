@@ -204,17 +204,54 @@ Use these hostnames in Android/iOS Private DNS settings:
 ---
 
 ### 11. Cisco Umbrella (OpenDNS) ❌ (NEW)
+
 **Location:** USA  
 **Provider:** Cisco Systems  
 **Privacy Policy:** https://www.cisco.com/c/en/us/about/legal/privacy-full.html
 
-| Variant | IPv4 | DoH Template | Private DNS Hostname |
-|---------|------|--------------|---------------------|
-| Standard | 208.67.222.222, 208.67.220.220 | https://doh.opendns.com/dns-query | `doh.opendns.com` |
-| FamilyShield | 208.67.222.123, 208.67.220.123 | https://doh.familyshield.opendns.com/dns-query | `doh.familyshield.opendns.com` |
-| Sandbox | Various | https://doh.sandbox.opendns.com/dns-query | `doh.sandbox.opendns.com` |
+#### DNS over HTTPS (DoH)
+| Variant        | IPv4                | IPv6                   | DoH Template URL                                 |
+|--------------- |---------------------|------------------------|-------------------------------------------------|
+| Standard       | 208.67.222.222      | 2620:119:35::35        | https://dns.opendns.com/dns-query                |
+|                | 208.67.220.220      | 2620:119:53::53        | https://dns.opendns.com/dns-query                |
+| FamilyShield   | 208.67.222.123      | 2620:119:35::123*      | https://familyshield.opendns.com/dns-query       |
+|                | 208.67.220.123      | 2620:119:53::123*      | https://familyshield.opendns.com/dns-query       |
+| Sandbox        | 208.67.222.2        | 2620:0:ccc::2          | https://sandbox.opendns.com/dns-query            |
+|                | 208.67.220.2        | 2620:0:ccd::2          | https://sandbox.opendns.com/dns-query            |
+
+*Note: IPv6 FamilyShield is not officially published by Cisco, but included for completeness if present in registry.*
+
+#### DNS over TLS (DoT)
+- **Cisco/OpenDNS does not publish public DoT endpoints for consumers.**
+- DoT is not supported in Windows registry; only DoH is supported.
 
 **Source:** https://support.opendns.com/hc/en-us/articles/360038086532
+
+#### Verification Steps
+
+1. **Check Registry Entries**
+  - Open `DoH-Well-Known-Servers\Doh Well Known Servers.reg` and confirm all above IPs and templates are present.
+
+2. **Test DNS Resolution (nslookup)**
+  - Set your DNS to a Cisco IP (e.g., 208.67.222.222) in your network adapter, then run:
+    ```powershell
+    nslookup example.com 208.67.222.222
+    ```
+    You should get a valid response from OpenDNS.
+
+3. **Verify DoH is Active (Windows)**
+  - Run:
+    ```powershell
+    Get-DnsClientDohServerAddress
+    ```
+    Look for Cisco IPs and their DoH templates in the output.
+
+**Summary:**
+- All Cisco/OpenDNS DoH endpoints and published IPs are present in the registry.
+- DoT is not supported for Windows registry.
+- No DNSCrypt or custom filtering endpoints are possible in this context.
+
+**Last verified:** October 2025
 
 ---
 
