@@ -145,9 +145,11 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** CleanBrowsing  
 **Privacy Policy:** https://cleanbrowsing.org/privacy
 
-| Variant | IPv4 | DoH Template |
-|---------|------|--------------|
-| Security Filter | 185.228.168.9 | https://doh.cleanbrowsing.org/doh/security-filter/ |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Family Filter (Blocks adult content, proxies/VPNs, mixed content sites) | 185.228.168.168, 185.228.169.168 | 2a0d:2a00:1::, 2a0d:2a00:2:: | https://doh.cleanbrowsing.org/doh/family-filter/ | `family-filter-dns.cleanbrowsing.org` |
+| Adult Filter (Blocks adult content only) | 185.228.168.10, 185.228.169.11 | 2a0d:2a00:1::1, 2a0d:2a00:2::1 | https://doh.cleanbrowsing.org/doh/adult-filter/ | `adult-filter-dns.cleanbrowsing.org` |
+| Security Filter (Blocks malware, phishing, spam only) | 185.228.168.9, 185.228.169.9 | 2a0d:2a00:1::2, 2a0d:2a00:2::2 | https://doh.cleanbrowsing.org/doh/security-filter/ | `security-filter-dns.cleanbrowsing.org` |
 
 **Source:** https://cleanbrowsing.org/filters/
 
