@@ -47,7 +47,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 | Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
 |---------|------|------|--------------|---------------------|
 | Standard | 8.8.8.8, 8.8.4.4 | 2001:4860:4860::8888, 2001:4860:4860::8844 | https://dns.google/dns-query | `dns.google` |
-| DNS64 (IPv6 only) | - | 2001:4860:4860::6464, 2001:4860:4860::64 | https://dns64.google/dns-query | `dns64.google` |
+| DNS64 (IPv6 only) | - | 2001:4860:4860::6464, 2001:4860:4860::64 | https://dns64.dns.google/dns-query | `dns64.dns.google` |
 
 **Note:** DNS64 is IPv6-only and helps IPv6-only networks access IPv4-only services.
 
