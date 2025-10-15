@@ -34,11 +34,13 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Cloudflare, Inc.  
 **Privacy Policy:** https://www.cloudflare.com/privacypolicy/
 
-| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname |
-|---------|------|------|--------------|---------------------|
-| Standard | 1.1.1.1, 1.0.0.1 | 2606:4700:4700::1111, 2606:4700:4700::1001 | https://cloudflare-dns.com/dns-query | `cloudflare-dns.com` |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Standard | 1.1.1.1, 1.0.0.1 | 2606:4700:4700::1111, 2606:4700:4700::1001 | https://cloudflare-dns.com/dns-query | `cloudflare-dns.com`<br>Also: `one.one.one.one`, `1dot1dot1dot1.cloudflare-dns.com` |
 | Security (Malware blocking) | 1.1.1.2, 1.0.0.2 | 2606:4700:4700::1112, 2606:4700:4700::1002 | https://security.cloudflare-dns.com/dns-query | `security.cloudflare-dns.com` |
 | Family (Malware + Adult blocking) | 1.1.1.3, 1.0.0.3 | 2606:4700:4700::1113, 2606:4700:4700::1003 | https://family.cloudflare-dns.com/dns-query | `family.cloudflare-dns.com` |
+
+**Note:** For NAT64/DNS64 environments (IPv6-only networks), use hostname `dns64.cloudflare-dns.com` which resolves to 2606:4700:4700::64, 2606:4700:4700::6400.
 
 **Source:** https://developers.cloudflare.com/1.1.1.1/
 
