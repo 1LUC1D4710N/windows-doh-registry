@@ -276,10 +276,10 @@ Windows Registry Editor Version 5.00
 "Template"="https://doh.cleanbrowsing.org/doh/security-filter/"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\116.202.176.26]
-"Template"="https://doh.libredns.gr/dns-query"
+"Template"="https://doh.libredns.gr/noads"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a01:4f8:1c0c:8274::1]
-"Template"="https://doh.libredns.gr/dns-query"
+"Template"="https://doh.libredns.gr/noads"
 
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\91.239.100.100]
