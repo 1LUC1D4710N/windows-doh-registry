@@ -116,12 +116,13 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** DNS4EU Consortium  
 **Privacy Policy:** https://www.dns4eu.eu/privacy-policy/
 
-| Variant | IPv4 | IPv6 | DoH Template |
-|---------|------|------|--------------|
-| Protective | 86.54.11.1, 86.54.11.201 | Multiple | https://protective.joindns4.eu/dns-query |
-| Child Safe + No Ads | 86.54.11.11, 86.54.11.211 | Multiple | https://child-noads.joindns4.eu/dns-query |
-| Child Safe | 86.54.11.12, 86.54.11.212 | Multiple | https://child.joindns4.eu/dns-query |
-| No Ads | 86.54.11.13, 86.54.11.213 | Multiple | https://noads.joindns4.eu/dns-query |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Protective | 86.54.11.1, 86.54.11.201 | 2a13:1001::86:54:11:1, 2a13:1001::86:54:11:201 | https://protective.joindns4.eu/dns-query | `protective.joindns4.eu` |
+| Child Safe | 86.54.11.12, 86.54.11.212 | 2a13:1001::86:54:11:12, 2a13:1001::86:54:11:212 | https://child.joindns4.eu/dns-query | `child.joindns4.eu` |
+| No Ads | 86.54.11.13, 86.54.11.213 | 2a13:1001::86:54:11:13, 2a13:1001::86:54:11:213 | https://noads.joindns4.eu/dns-query | `noads.joindns4.eu` |
+| Child Safe + No Ads | 86.54.11.11, 86.54.11.211 | 2a13:1001::86:54:11:11, 2a13:1001::86:54:11:211 | https://child-noads.joindns4.eu/dns-query | `child-noads.joindns4.eu` |
+| Unfiltered | 86.54.11.100, 86.54.11.200 | 2a13:1001::86:54:11:100, 2a13:1001::86:54:11:200 | https://unfiltered.joindns4.eu/dns-query | `unfiltered.joindns4.eu` |
 
 **Source:** https://www.dns4eu.eu/
 

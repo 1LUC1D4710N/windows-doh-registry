@@ -239,6 +239,18 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\9.9.9.9]
 "Template"="https://dns.quad9.net/dns-query"
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::10]
+"Template"="https://dns10.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::fe:10]
+"Template"="https://dns10.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::11]
+"Template"="https://dns11.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::fe:11]
+"Template"="https://dns11.quad9.net/dns-query"
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.228.168.168]
 "Template"="https://doh.cleanbrowsing.org/doh/family-filter/"
 
@@ -280,7 +292,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a01:4f8:1c0c:8274::1]
 "Template"="https://doh.libredns.gr/noads"
-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\91.239.100.100]
 "Template"="https://anycast.uncensoreddns.org/dns-query"
