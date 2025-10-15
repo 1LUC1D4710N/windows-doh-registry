@@ -204,9 +204,11 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** LibreOps  
 **Privacy Policy:** https://libredns.gr/privacy/
 
-| Variant | IPv4 | DoH Template | Private DNS Hostname |
-|---------|------|--------------|---------------------|
-| No Ads | 116.202.176.26 | https://doh.libredns.gr/ads | `doh.libredns.gr` |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Standard (No filtering) | 116.202.176.26 | 2a01:4f8:1c0c:8274::1 | https://doh.libredns.gr/dns-query | `dot.libredns.gr` |
+
+**Note:** LibreDNS also offers an ad-blocking endpoint at `https://doh.libredns.gr/noads` (Private DNS: `noads.libredns.gr`) but it's not included in this registry.
 
 **Source:** https://libredns.gr/
 
