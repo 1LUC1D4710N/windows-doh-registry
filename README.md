@@ -17,35 +17,12 @@
 **Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
 
 **Popular DNS IPs:**
-- Cloudflare Security (Fast, privacy-focused):
-  `1.1.1.2` - `1.0.0.2`
-  `2606:4700:4700::1112` - `2606:4700:4700::1002`  
-  `https://security.cloudflare-dns.com/dns-query`
-  
-- Quad9 (Blocks malware):
-  IPv4
-  `9.9.9.9` - `149.112.112.112`
-  IPv6
-  `2620:fe::fe` - `2620:fe::9`
-  DoH
-  `https://dns.quad9.net/dns-query`
-  Private DNS (smartphone DNS)
-  `dns.quad9.net`
-  
-- DNS0.EU (EU-based, zero-logging):
-  `193.110.81.0` - `185.253.5.0`
-  `193.110.81.0` - `185.253.5.0`
-  `
-  
-- DNS4EU:
-  `86.54.11.1` - `86.54.11.201`
-  `86.54.11.1` - `86.54.11.201`
-  `
-  
-- Control D:
-  `76.76.2.2` - `76.76.10.2`
-  `https://freedns.controld.com/p2`
-
+- Cloudflare Security (Fast, privacy-focused).
+- Quad9 (Blocks malware).
+- Mullvad (Excellent privacy and strong blocking)
+- DNS0.EU (EU-based, zero-logging).
+- DNS4EU(EU-based, zero-logging).
+- Control D (Excellent privacy, zero-logging, excellence in optional).
 
 ---
 
