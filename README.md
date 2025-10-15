@@ -20,6 +20,7 @@ The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all 
 4. Done! All 147 DoH providers are now available in Windows
 
 ### Step 2: Choose Your DNS Provider
+
 **Windows 11:** Settings → Network & Internet → Properties → DNS server assignment → Edit  
 **Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
 
@@ -30,6 +31,30 @@ The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all 
 - DNS0.EU (EU-based, zero-logging).
 - DNS4EU(EU-based, zero-logging).
 - Control D (Excellent privacy, zero-logging, excellence in optional).
+
+---
+
+### 🧩 How “Autotemplate” Works
+When you add DNS providers to DohWellKnownServers, Windows will automatically suggest the correct DoH template when you enter a matching DNS IP in your network settings. This “autotemplate” feature makes it easy for anyone to set up encrypted DNS—just enter the IP, and Windows fills in the rest!
+
+### ⚡ Advanced: Enforce DoH on All Interfaces
+For advanced users or organizations: To guarantee all network adapters (Ethernet, Wi-Fi, VPN, etc.) use your chosen DoH servers, you can also populate the InterfaceSpecificParameters registry section. This enforces DoH usage system-wide, even if network settings are reset or changed.
+
+### 🖼️ See It in Action
+<img alt="Windows DoH autotemplate example" src="https://user-images.githubusercontent.com/your-screenshot-link.png">
+
+When you enter a supported DNS IP, Windows fills in the DoH template automatically!
+
+### ❓ Troubleshooting & FAQ
+
+**Q: I don’t see the DoH template appear when I enter a DNS IP.**  
+A: Make sure you’ve imported the latest Doh-Well-Known-Servers.reg file and are using a supported DNS IP.
+
+**Q: How do I remove these entries?**  
+A: Right-click the .reg file and select “Merge” to add entries. To remove, use Registry Editor to delete the relevant keys, or restore a backup.
+
+**Q: Is this safe?**  
+A: Yes! The registry file only adds trusted DoH templates and does not change your current DNS settings.
 
 ---
 
