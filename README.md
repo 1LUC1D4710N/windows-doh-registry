@@ -17,7 +17,7 @@ The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all 
 1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
 2. **Right-click** the downloaded file → Select **"Merge"**
 3. Click **"Yes"** when Windows asks for permission
-4. Done! All 147 DoH providers are now available in Windows
+4. Done! All 137 DoH configurations from 14 providers are now available in Windows
 
 ### Step 2: Choose Your DNS Provider
 
@@ -86,7 +86,7 @@ You should see DNS IPs with DoH template URLs. If you see "False" values, **that
 ✅ = Already in Microsoft's default list  
 ❌ = **NEW** - Added by this registry (not in Microsoft's list)
 
-**Total:** 147 configurations from 12 providers
+**Total:** 137 configurations from 14 providers
 
 ---
 
@@ -106,7 +106,7 @@ You should see DNS IPs with DoH template URLs. If you see "False" values, **that
 
 You still control which DNS provider you use through Windows Settings.
 
-**All 147 configurations verified against official sources.** ✅
+**All 137 configurations verified against official sources.** ✅
 
 ---
 
@@ -117,13 +117,13 @@ Microsoft's Windows has supported DNS over HTTPS since 2020, but only includes *
 - Google (8.8.8.8)
 - Quad9 (9.9.9.9)
 
-This registry adds **11 more privacy-focused DNS providers** with 147 total configurations, giving you more choices for encrypted DNS.
+This registry adds **11 more privacy-focused DNS providers** with 137 total configurations, giving you more choices for encrypted DNS.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 WHAT YOU GET                                            │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 147 DNS configurations (Microsoft has 3)                │
+│  ✅ 137 DNS configurations (Microsoft has 3)                │
 │  ✅ 14 DNS providers (Microsoft has 3)                      │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe filtering options                           │
@@ -168,8 +168,8 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📊 Quick Stats
 
-- **147 configurations** (Microsoft has 3)
-- **14 providers** (Microsoft has 3)
+-- **137 configurations** (Microsoft has 3)
+-- **14 providers** (Microsoft has 3)
 - **100% verified** against official sources
 - **Years of research** compiled into one registry file
 - **Ready to use** right now

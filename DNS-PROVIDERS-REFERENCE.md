@@ -2,6 +2,8 @@
 
 Complete reference for all 14 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
 
+**Total:** 137 configurations from 14 providers (as of October 2025)
+
 ---
 
 ## ➕ Add Only a Single DNS Provider
