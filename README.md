@@ -12,22 +12,6 @@ The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all 
 
 ---
 
-## ➕ Add Only a Single DNS Provider
-
-If you want to add just one DNS provider from the list, use the script below. Replace `<DNS_IP>` and `<DoH_Template_URL>` with the values for your chosen provider (see the DNS-PROVIDERS-REFERENCE.md for details):
-
-```powershell
-New-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers" -Name '<DNS_IP>' -Force | Out-Null
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\<DNS_IP>" -Name 'Template' -Value '<DoH_Template_URL>'
-```
-
-Example for Cloudflare:
-```powershell
-New-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers" -Name '1.1.1.1' -Force | Out-Null
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\1.1.1.1" -Name 'Template' -Value 'https://cloudflare-dns.com/dns-query'
-```
-
-You must run PowerShell as Administrator.
 
 ### Step 1: Download & Import the Registry File
 1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
