@@ -108,10 +108,10 @@ Windows Registry Editor Version 5.00
 "Template"="https://kids.dns0.eu/"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2001:4860:4860::64]
-"Template"="https://dns64.dns.google/dns-query"
+"Template"="https://dns64.google/dns-query"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2001:4860:4860::6464]
-"Template"="https://dns64.dns.google/dns-query"
+"Template"="https://dns64.google/dns-query"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2001:4860:4860::8844]
 "Template"="https://dns.google/dns-query"
