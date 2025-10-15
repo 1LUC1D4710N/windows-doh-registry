@@ -67,12 +67,12 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Provider:** Quad9 Foundation  
 **Privacy Policy:** https://quad9.net/privacy/policy/
 
-| Variant | IPv4 | IPv6 | DoH Template |
-|---------|------|------|--------------|
-| Standard (Malware blocking) | 9.9.9.9, 149.112.112.112 | 2620:fe::fe, 2620:fe::9 | https://dns.quad9.net/dns-query |
-| ECS Variant | 9.9.9.10 | 2620:fe::10 | https://dns10.quad9.net/dns-query |
-| Secured with ECS | 9.9.9.11, 149.112.112.11 | 2620:fe::11 | https://dns11.quad9.net/dns-query |
-| Unsecured Variant | 9.9.9.10 | 2620:fe::10 | https://dns9.quad9.net/dns-query |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Standard (Malware blocking, DNSSEC) | 9.9.9.9, 149.112.112.112 | 2620:fe::fe, 2620:fe::9 | https://dns.quad9.net/dns-query | `dns.quad9.net` |
+| Alternative Endpoint (Same filtering) | 9.9.9.9, 149.112.112.9 | 2620:fe::9, 2620:fe::fe:9 | https://dns9.quad9.net/dns-query | `dns9.quad9.net` |
+| Unsecured (No malware blocking, no DNSSEC) | 9.9.9.10, 149.112.112.10 | 2620:fe::10, 2620:fe::fe:10 | https://dns10.quad9.net/dns-query | `dns10.quad9.net` |
+| Secured with ECS (Malware blocking, DNSSEC, ECS enabled) | 9.9.9.11, 149.112.112.11 | 2620:fe::11, 2620:fe::fe:11 | https://dns11.quad9.net/dns-query | `dns11.quad9.net` |
 
 **Source:** https://quad9.net/service/service-addresses-and-features
 
