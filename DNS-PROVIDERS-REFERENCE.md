@@ -97,15 +97,18 @@ Use these hostnames in Android/iOS Private DNS settings:
 ---
 
 ### 5. DNS0.EU ❌ (NEW)
+
 **Location:** Europe (Germany)  
 **Provider:** DNS0.EU Foundation  
 **Privacy Policy:** https://dns0.eu/privacy
 
-| Variant | IPv4 | IPv6 | DoH Template |
-|---------|------|------|--------------|
-| Standard | 193.110.81.0, 185.253.5.0 | 2a0f:fc80::, 2a0f:fc81:: | https://dns0.eu/ |
-| Kids (CSAM filter) | 193.110.81.1, 185.253.5.1 | 2a0f:fc80::1, 2a0f:fc81::1 | https://kids.dns0.eu/ |
-| Zero (No blocking) | 193.110.81.9, 185.253.5.9 | 2a0f:fc80::9, 2a0f:fc81::9 | https://zero.dns0.eu/ |
+| Variant | IPv4 | IPv6 | DoH Template | Private DNS Hostname (DoT) |
+|---------|------|------|--------------|---------------------------|
+| Standard | 193.110.81.0, 185.253.5.0 | 2a0f:fc80::, 2a0f:fc81:: | https://dns0.eu/ | `dns0.eu` |
+| Kids (CSAM filter) | 193.110.81.1, 185.253.5.1 | 2a0f:fc80::1, 2a0f:fc81::1 | https://kids.dns0.eu/ | `kids.dns0.eu` |
+| Zero (No blocking) | 193.110.81.9, 185.253.5.9 | 2a0f:fc80::9, 2a0f:fc81::9 | https://zero.dns0.eu/ | `zero.dns0.eu` |
+
+**Note:** The Private DNS hostnames for DoT are inferred from the DoH endpoints and verified as valid hostnames via DNS. Official documentation does not explicitly list DoT hostnames, but this matches common provider practice.
 
 **Source:** https://dns0.eu/
 
