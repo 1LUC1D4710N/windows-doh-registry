@@ -41,7 +41,7 @@ When you add DNS providers to DohWellKnownServers, Windows will automatically su
 For advanced users or organizations: To guarantee all network adapters (Ethernet, Wi-Fi, VPN, etc.) use your chosen DoH servers, you can also populate the InterfaceSpecificParameters registry section. This enforces DoH usage system-wide, even if network settings are reset or changed.
 
 ### 🖼️ See It in Action
-<img alt="Windows DoH autotemplate example" src="https://user-images.githubusercontent.com/your-screenshot-link.png">
+<img alt="Windows DoH autotemplate example" src="[https://user-images.githubusercontent.com/your-screenshot-link.png](https://youtu.be/uHLK47c-mBs)">
 
 When you enter a supported DNS IP, Windows fills in the DoH template automatically!
 
