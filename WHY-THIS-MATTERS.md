@@ -1,4 +1,3 @@
-> **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
 # Why This Project Matters - An Open Invitation to Microsoft
 
 ## 📊 The Current Situation
@@ -311,6 +310,10 @@ And that's what matters.
 **Users: Don't wait. Better DNS privacy is here.** 🔒
 
 **Together, we can make Windows more private and secure for everyone.** 🌟
+
+---
+
+> **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
 
 ---
 
