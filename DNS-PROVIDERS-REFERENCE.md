@@ -123,14 +123,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Source:** https://controld.com/free-dns
 
 ---
-### DNS0.eu (Discontinued)
-> DNS0.eu was discontinued on October 17th, 2025. All related IP addresses and registry entries have been removed. For secure DNS-over-HTTPS, use alternatives such as DNS4EU or NextDNS.io.
-
- > **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
-
----
-
-### 6. DNS4EU (JoinDNS4) ❌ (NEW)
+### 5. DNS4EU (JoinDNS4) ❌ (NEW)
 **Location:** Europe (EU-funded)  
 **Provider:** DNS4EU Consortium  
 **Privacy Policy:** https://www.dns4eu.eu/privacy-policy/
@@ -147,7 +140,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 7. NextDNS ❌ (NEW)
+### 6. NextDNS ❌ (NEW)
 **Location:** Global (Anycast)  
 **Provider:** NextDNS Inc.  
 **Privacy Policy:** https://nextdns.io/privacy
@@ -162,7 +155,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 8. CleanBrowsing ❌ (NEW)
+### 7. CleanBrowsing ❌ (NEW)
 **Location:** USA  
 **Provider:** CleanBrowsing  
 **Privacy Policy:** https://cleanbrowsing.org/privacy
@@ -177,7 +170,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 9. Mullvad DNS ❌ (NEW)
+### 8. Mullvad DNS ❌ (NEW)
 **Location:** Sweden  
 **Provider:** Mullvad VPN (Amagicom AB)  
 **Privacy Policy:** https://mullvad.net/privacy
@@ -195,7 +188,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 10. AdGuard DNS ❌ (NEW)
+### 9. AdGuard DNS ❌ (NEW)
 
 **Location:** Cyprus  
 **Provider:** AdGuard Software Ltd.  
@@ -211,7 +204,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 11. Cisco Umbrella (OpenDNS) ❌ (NEW)
+### 10. Cisco Umbrella (OpenDNS) ❌ (NEW)
 
 
 
@@ -229,7 +222,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 12. LibreDNS ❌ (NEW)
+### 11. LibreDNS ❌ (NEW)
 **Location:** Germany  
 **Provider:** LibreOps  
 **Privacy Policy:** https://libredns.gr/privacy/
@@ -244,7 +237,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 13. UncensoredDNS ❌ (NEW)
+### 12. UncensoredDNS ❌ (NEW)
 **Location:** Denmark  
 **Provider:** Thomas Steen Rasmussen (Unicast)  
 **Privacy Policy:** https://blog.uncensoreddns.org/dns-privacy/
