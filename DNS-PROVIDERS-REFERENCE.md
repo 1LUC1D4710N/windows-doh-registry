@@ -1,8 +1,8 @@
 # DNS Providers Reference Guide
 
-Complete reference for all 14 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
+Complete reference for all 12 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
 
-**Total:** 137 configurations from 14 providers (as of October 2025)
+**Total:** 125 configurations from 12 providers (as of October 2025)
 
 ---
 
@@ -285,7 +285,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ## 📊 Total Configurations
 
-This registry includes **137 DNS configurations** across **14 providers**:
+This registry includes **125 DNS configurations** across **12 providers**:
 - 3 pre-installed in Windows (Cloudflare, Google, Quad9)
 - 11 additional providers
 

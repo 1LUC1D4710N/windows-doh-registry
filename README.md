@@ -172,8 +172,8 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📊 Quick Stats
 
--- **137 configurations** (Microsoft has 3)
--- **14 providers** (Microsoft has 3)
+-- **125 configurations** (Microsoft has 3)
+-- **12 providers** (Microsoft has 3)
 - **100% verified** against official sources
 - **Years of research** compiled into one registry file
 - **Ready to use** right now

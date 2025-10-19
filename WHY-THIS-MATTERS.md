@@ -52,8 +52,8 @@ Over several years of research and verification, this project has:
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 PROJECT STATISTICS                                      │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 137 DNS configurations verified                         │
-│  ✅ 14 DNS providers documented (Microsoft has 3)           │
+│  ✅ 125 DNS configurations verified                         │
+│  ✅ 12 DNS providers documented (Microsoft has 3)           │
 │  ✅ 45× more configurations than Microsoft's default        │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe variants for parental control               │
@@ -104,8 +104,8 @@ That experience taught me that **Microsoft does listen to community feedback** w
 ┌─────────────────────────────────────────────────────────────┐
 │  🎁 WHAT MICROSOFT GETS                                     │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 137 verified DNS configurations                         │
-│  ✅ 14 DNS providers (you have 3, I've verified 11 more)    │
+│  ✅ 125 verified DNS configurations                         │
+│  ✅ 12 DNS providers (you have 3, I've verified 9 more)     │
 │  ✅ Complete verification notes with source citations       │
 │  ✅ European provider options for GDPR compliance           │
 │  ✅ Family-safe variants with parental controls             │
