@@ -90,7 +90,7 @@ You should see DNS IPs with DoH template URLs. If you see "False" values, **that
 
 **Total:** 125 configurations from 12 providers
 
- > **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
+DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 
 ---
 

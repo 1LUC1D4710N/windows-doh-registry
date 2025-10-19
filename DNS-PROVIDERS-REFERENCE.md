@@ -284,7 +284,9 @@ This registry includes **125 DNS configurations** across **12 providers**:
 
 All configurations verified against official documentation as of October 2025.
 
-> DNS0.eu was discontinued on October 17th, 2025. All related IP addresses and registry entries have been removed. For secure DNS-over-HTTPS, use alternatives such as DNS4EU or NextDNS.io.
+---
+
+DNS0.eu was discontinued on October 17th, 2025. All related IP addresses and registry entries have been removed. For secure DNS-over-HTTPS, use alternatives such as DNS4EU or NextDNS.io.
 
 ---
 
