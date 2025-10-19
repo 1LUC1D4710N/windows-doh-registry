@@ -1,4 +1,3 @@
-
 # Windows DoH Registry - More DNS Privacy Options
 
 **Expand Windows DNS over HTTPS (DoH) support from 3 providers to 14 providers with one registry import.**
@@ -28,7 +27,6 @@ The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all 
 - Cloudflare Security (Fast, privacy-focused).
 - Quad9 (Blocks malware).
 - Mullvad (Excellent privacy and strong blocking)
-- DNS0.EU (EU-based, zero-logging).
 - DNS4EU(EU-based, zero-logging).
 - Control D (Excellent privacy, zero-logging, excellence in optional).
 
@@ -80,7 +78,6 @@ You should see DNS IPs with DoH template URLs. If you see "False" values, **that
 | **Google** ✅ | USA | 8.8.8.8 | Reliable, DNS64 support |
 | **Quad9** ✅ | Switzerland | 9.9.9.9 | Security-focused, blocks malware |
 | **Control D** ❌ | USA/Canada | 76.76.2.0 | 6 customizable filtering profiles |
-| **DNS0.EU** ❌ | Europe | 193.110.81.0 | Zero-logging, open-source |
 | **DNS4EU** ❌ | Europe | 86.54.11.1 | EU-funded, multiple filters |
 | **NextDNS** ❌ | Global | 45.90.28.0 | Customizable, privacy-first |
 | **CleanBrowsing** ❌ | USA | 185.228.168.9 | Family-safe, adult filter |
@@ -92,6 +89,8 @@ You should see DNS IPs with DoH template URLs. If you see "False" values, **that
 ❌ = **NEW** - Added by this registry (not in Microsoft's list)
 
 **Total:** 137 configurations from 14 providers
+
+ > **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
 
 ---
 

@@ -39,7 +39,6 @@ Use these hostnames in Android/iOS Private DNS settings:
 - `p3.freedns.controld.com` - Control D (Malware + Ads + Social)
 - `family.freedns.controld.com` - Control D (Family/Parental controls)
 - `uncensored.freedns.controld.com` - Control D (Uncensored)
- - `dns0.eu` - DNS0.EU ; REMOVED: provider reported offline (Oct 17, 2025)
 - `protective.joindns4.eu` - DNS4EU (Protective)
 - `dns.adguard-dns.com` - AdGuard DNS (Default)
 - `family.adguard-dns.com` - AdGuard DNS (Family)
@@ -124,8 +123,10 @@ Use these hostnames in Android/iOS Private DNS settings:
 **Source:** https://controld.com/free-dns
 
 ---
+### DNS0.eu (Discontinued)
+> DNS0.eu was discontinued on October 17th, 2025. All related IP addresses and registry entries have been removed. For secure DNS-over-HTTPS, use alternatives such as DNS4EU or NextDNS.io.
 
-> NOTE: DNS0.EU was reported offline on Oct 17, 2025 and removed from this registry. Related DoH entries in the repo are commented out; if DNS0.EU returns, re-add cautiously and verify official sources.
+ > **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
 
 ---
 
@@ -272,10 +273,10 @@ Use these hostnames in Android/iOS Private DNS settings:
 - ⚠️ **Geographic Restrictions:** Some content may behave differently with non-local DNS
 
 ### Choosing a Provider:
-- **Privacy-focused:** DNS0.EU, Mullvad, NextDNS
+ - **Privacy-focused:** Mullvad, NextDNS
 - **Security-focused:** Quad9, Cloudflare Security
 - **Family-safe:** Cloudflare Family, Control D Family, CleanBrowsing
-- **EU-based (GDPR):** DNS0.EU, DNS4EU, Quad9
+ - **EU-based (GDPR):** DNS4EU, Quad9
 - **Customizable:** Control D, NextDNS
 - **Ad-blocking:** AdGuard, Mullvad, Control D variants
 

@@ -89,24 +89,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\149.112.112.9]
 "Template"="https://dns9.quad9.net/dns-query"
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.110.81.0]
-	; "Template"="https://dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.253.5.0]
-	; "Template"="https://dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.110.81.9]
-	; "Template"="https://zero.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.253.5.9]
-	; "Template"="https://zero.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.110.81.1]
-	; "Template"="https://kids.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.253.5.1]
-	; "Template"="https://kids.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2001:4860:4860::64]
 "Template"="https://dns64.dns.google/dns-query"
 
@@ -205,24 +187,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::fe:9]
 "Template"="https://dns9.quad9.net/dns-query"
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc80::]
-	; "Template"="https://dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::]
-	; "Template"="https://dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc80::9]
-	; "Template"="https://zero.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::9]
-	; "Template"="https://zero.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc80::1]
-	; "Template"="https://kids.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::1]
-	; "Template"="https://kids.dns0.eu/" ; REMOVED: provider offline (Oct 17, 2025)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\8.8.4.4]
 "Template"="https://dns.google/dns-query"
@@ -341,7 +305,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a07:e340::9]
 "Template"="https://all.dns.mullvad.net/dns-query"
 
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\94.140.14.14]
 "Template"="https://dns.adguard-dns.com/dns-query"
 
@@ -377,7 +340,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a10:50c0::2:ff]
 "Template"="https://unfiltered.adguard-dns.com/dns-query"
-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\208.67.222.222]
 "Template"="https://dns.opendns.com/dns-query"

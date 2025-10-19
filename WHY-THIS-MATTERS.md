@@ -1,3 +1,4 @@
+> **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
 # Why This Project Matters - An Open Invitation to Microsoft
 
 ## 📊 The Current Situation
@@ -26,7 +27,6 @@ While Microsoft's list has remained static, the DNS privacy landscape has evolve
 
 ### New Privacy-Focused Providers (NOT in Microsoft's List)
 - **Control D** (76.76.x.x) - Launched 2021, highly customizable DNS with 6 filtering profiles
-- **DNS0.EU** (193.110.81.0) - Launched 2022, zero-logging European DNS with open-source transparency
 - **DNS4EU/JoinDNS4** (86.54.11.x) - Launched 2023, European Union-funded public DNS infrastructure
 
 ### Enhanced Service Variants
@@ -54,7 +54,7 @@ Over several years of research and verification, this project has:
 ├─────────────────────────────────────────────────────────────┤
 │  ✅ 137 DNS configurations verified                         │
 │  ✅ 14 DNS providers documented (Microsoft has 3)           │
-│  ✅ 49× more configurations than Microsoft's default        │
+│  ✅ 45× more configurations than Microsoft's default        │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe variants for parental control               │
 │  ✅ Customizable filtering for different use cases          │
@@ -293,7 +293,7 @@ And that's what matters.
 ┌─────────────────────────────────────────────────────────────┐
 │  📚 PROJECT RESOURCES                                       │
 ├─────────────────────────────────────────────────────────────┤
-│  • This Project: 147 verified DoH configurations            │
+│  • This Project: 137 verified DoH configurations            │
 │  • Official Sources: All provider docs cited                │
 │  • Microsoft Docs: DoH Client Support documentation         │
 │  • Community: Open for contributions                        │
