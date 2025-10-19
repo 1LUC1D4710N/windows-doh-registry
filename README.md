@@ -186,7 +186,8 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ---
 
-DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+DNS0.eu has been discontinued on October 17th, 2025. 
+For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 
 ---
 
