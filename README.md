@@ -274,6 +274,21 @@ For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 
 ---
 
+
+---
+
+```text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  Do you want to choose your own DoH Auto Templating registry?                │
+│                                                                              │
+│  Look at this page and download:                                             │
+│  HTML-based — select only the DNS providers you want.                        │
+│  Your registry file is fully customized to your choices.                     │
+│                                                                              │
+│  👉 https://github.com/1LUC1D4710N/doh-registry-generator                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
+
 **Last Updated:** October 2025  
 **Status:** ✅ Verified and ready for public use  
 **License:** MIT License - Free to use with attribution
