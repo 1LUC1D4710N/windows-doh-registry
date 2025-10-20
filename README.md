@@ -5,8 +5,10 @@
 
 ---
 
-DNS0.eu has been discontinued on October 17th, 2025. 
-For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+      DNS0.eu has been discontinued on October 17th, 2025. 
+      For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+
+---
 
 ### Step 1: Download & Import the Registry File
 1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
@@ -19,11 +21,12 @@ For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 **Windows 11:** Settings → Network & Internet → Properties → DNS server assignment → Edit  
 **Windows 10:** Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
 
+
 **Popular DNS IPs:**
 - Cloudflare Security (Fast, privacy-focused).
 - Quad9 (Blocks malware).
 - Mullvad (Excellent privacy and strong blocking)
-- DNS4EU(EU-based, zero-logging).
+- DNS4EU (EU-based, zero-logging).
 - Control D (Excellent privacy, zero-logging, excellence in optional).
 
 ---
@@ -31,16 +34,17 @@ For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 ### 🧩 How “Autotemplate” Works
 When you add DNS providers to DohWellKnownServers, Windows will automatically suggest the correct DoH template when you enter a matching DNS IP in your network settings. This “autotemplate” feature makes it easy for anyone to set up encrypted DNS—just enter the IP, and Windows fills in the rest!
 
+
 ### 🖼️ See It in Action
 <a href="https://www.youtube.com/watch?v=uHLK47c-mBs">
-    <img src="https://img.youtube.com/vi/uHLK47c-mBs/0.jpg" alt="Windows DoH autotemplate example" width="560" height="315">
+   <img src="https://img.youtube.com/vi/uHLK47c-mBs/0.jpg" alt="Windows DoH autotemplate example" width="560" height="315">
 </a>
-
 
 
 
 When you enter a supported DNS IP, Windows fills in the DoH template automatically!
 
+---
 ### ❓ Troubleshooting & FAQ
 
 #### Common Issues & Solutions
@@ -61,11 +65,13 @@ A: Open PowerShell and run:
 Get-DnsClientDohServerAddress
 ```
 
+
 You should see DNS IPs with DoH template URLs. If you see "False" values, **that's normal** – it means DoH is working correctly!
+
 
 **Q: How do I remove these entries?**
 
-A: Use Registry Editor to navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers` and delete the relevant keys. Always back up your registry before making changes.
+A: Use Registry Editor, open it as administrator and to navigate to: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers` and delete the relevant keys. Always back up your registry before making changes.
 
 **Q: Is this safe?**
 
@@ -134,6 +140,20 @@ For advanced users, IT administrators, and managed workstations: you can enforce
 - Right-click the downloaded file → Select "Merge"
 - Click "Yes" when Windows asks for permission
 - Done! DoH is now enforced systemwide for all supported DNS providers
+
+
+
+---
+**How to Remove Global DoH Enforcement**
+
+To remove the systemwide DoH enforcement added by the Global InterfaceSpecificParameters registry file:
+
+**Q: How do I remove these entries?**
+
+A: Use Registry Editor, open it as administrator and to navigate to:
+   `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\InterfaceSpecificParameters\GlobalDohIP` and delete the relevant keys. Always back up your registry before making changes.
+
+*This restores your system to its previous DNS behavior. Only remove these entries if you want to disable global DoH enforcement.*
 
 ---
 
@@ -256,8 +276,13 @@ For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 ## 🚀 Quick Start
 
 1. **Download the registry file:**
-   - [Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)
-   - [Global-InterfaceSpecificParameter.reg](Global-Interface-Specific-Parameters/Global-InterfaceSpecificParameter.reg) (for systemwide enforcement)
+  - [Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)
+  Where is this located?
+  `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers`
+  - [Global-InterfaceSpecificParameter.reg](Global-Interface-Specific-Parameters/Global-InterfaceSpecificParameter.reg) (for systemwide enforcement)
+  Where is this located?
+  `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\InterfaceSpecificParameters\GlobalDohIP`
+
 2. **Import the registry file:**
    - Right-click the file and select "Merge"
    - Click "Yes" to confirm
