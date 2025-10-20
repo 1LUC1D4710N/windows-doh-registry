@@ -2,15 +2,11 @@
 
 **Expand Windows DNS over HTTPS (DoH) support from 3 providers to 12 providers with one registry import.**
 
----
-
-
-## ℹ️ About the Registry File
-
-The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all supported DNS providers missing from the default Windows DoH registry. This lets you add every provider at once, or you can add just a single provider if you prefer.
 
 ---
 
+DNS0.eu has been discontinued on October 17th, 2025. 
+For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 
 ### Step 1: Download & Import the Registry File
 1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
@@ -35,9 +31,6 @@ The main registry file (`Doh-Well-Known-Servers.reg`) contains raw data for all 
 ### 🧩 How “Autotemplate” Works
 When you add DNS providers to DohWellKnownServers, Windows will automatically suggest the correct DoH template when you enter a matching DNS IP in your network settings. This “autotemplate” feature makes it easy for anyone to set up encrypted DNS—just enter the IP, and Windows fills in the rest!
 
-### ⚡ Advanced: Enforce DoH on All Interfaces
-For advanced users or organizations: To guarantee all network adapters (Ethernet, Wi-Fi, VPN, etc.) use your chosen DoH servers, you can also populate the InterfaceSpecificParameters registry section. This enforces DoH usage system-wide, even if network settings are reset or changed.
-
 ### 🖼️ See It in Action
 <a href="https://www.youtube.com/watch?v=uHLK47c-mBs">
     <img src="https://img.youtube.com/vi/uHLK47c-mBs/0.jpg" alt="Windows DoH autotemplate example" width="560" height="315">
@@ -50,23 +43,97 @@ When you enter a supported DNS IP, Windows fills in the DoH template automatical
 
 ### ❓ Troubleshooting & FAQ
 
-**Q: I don’t see the DoH template appear when I enter a DNS IP.**  
-A: Make sure you’ve imported the latest Doh-Well-Known-Servers.reg file and are using a supported DNS IP.
+#### Common Issues & Solutions
 
-**Q: How do I remove these entries?**  
-A: Right-click the .reg file and select “Merge” to add entries. To remove, use Registry Editor to delete the relevant keys, or restore a backup.
+**Q: I get an error when importing the .reg file.**
 
-**Q: Is this safe?**  
-A: Yes! The registry file only adds trusted DoH templates and does not change your current DNS settings.
+A: Make sure you have administrator rights. Right-click the .reg file and select "Run as administrator." If you see a syntax error, check that the file was downloaded completely and is not corrupted.
 
----
+**Q: I don’t see the DoH template appear when I enter a DNS IP.**
 
-### ✅ Verify It Works (Optional)
-Open PowerShell and run:
+A: Make sure you’ve imported the latest Doh-Well-Known-Servers.reg file and are using a supported DNS IP. Restart your computer or network adapter if changes don’t appear immediately.
+
+**Q: How do I validate the registry entries?**
+
+A: Open PowerShell and run:
+
 ```powershell
 Get-DnsClientDohServerAddress
 ```
-You should see DNS IPs with DoH template URLs. If you see "False" values, **that's normal** - it means DoH is working correctly!
+
+You should see DNS IPs with DoH template URLs. If you see "False" values, **that's normal** – it means DoH is working correctly!
+
+**Q: How do I remove these entries?**
+
+A: Use Registry Editor to navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers` and delete the relevant keys. Always back up your registry before making changes.
+
+**Q: Is this safe?**
+
+A: Yes! The registry file only adds trusted DoH templates and does not change your current DNS settings. Always download .reg files from trusted sources.
+
+**Safety Tips:**
+
+- Always back up your registry before making changes.
+- Only import .reg files you trust.
+- If you encounter issues, restore your registry from a backup.
+
+**Q: My system is unstable or registry errors persist after troubleshooting. What’s the best fix?**
+
+
+A: If troubleshooting takes too long or registry issues persist, you can easily repair Windows with an upgrade installation:
+
+**Quick Fix: Repair Windows with an ISO (No Data Loss)**
+
+1. **Download the latest Windows ISO:** [Download Windows 10/11 ISO from Microsoft](https://www.microsoft.com/en-us/software-download/windows)
+2. **Right-click the ISO file** in File Explorer and select **"Mount"**. This will create a new virtual DVD drive.
+3. **Open the new drive** and double-click **`setup.exe`**.
+4. Follow the prompts and choose **"Keep personal files and apps"** when asked. This will repair Windows while keeping your files and programs.
+5. Let the upgrade complete and restart your PC.
+
+This process repairs system files and registry issues without deleting your data or installed software. Only choose a clean install if you want to start completely fresh. For most users, the upgrade installation is a safe and easy fix for persistent problems.
+
+---
+
+### ❓ Frequently Asked Questions (FAQ)
+
+**Q: Will this change my current DNS provider?**
+A: No. The registry file only adds new DoH templates. You still choose your DNS provider in Windows Settings.
+
+**Q: Can I safely remove these registry entries?**
+A: Yes. You can use Registry Editor to delete the relevant keys, or restore a backup.
+
+**Q: Is it safe to import these registry files?**
+A: Yes, as long as you download them from trusted sources. Always back up your registry before making changes.
+
+**Q: What if I see errors when importing?**
+A: Make sure you have administrator rights and the file is not corrupted. See Troubleshooting for more help.
+
+**Q: How do I verify the DoH templates are working?**
+A: Use PowerShell:
+
+```powershell
+Get-DnsClientDohServerAddress
+```
+
+**Q: Can I contribute or suggest new providers?**
+A: Yes! Open an issue or pull request on GitHub, or contact the project maintainer.
+
+---
+
+### 🌐 Global InterfaceSpecificParameters: Systemwide DoH Enforcement
+
+For advanced users, IT administrators, and managed workstations: you can enforce DNS-over-HTTPS (DoH) systemwide across all network adapters (Ethernet, Wi-Fi, VPN, etc.) using Global InterfaceSpecificParameters. This method is not dependent on network GUIDs and applies DoH settings globally, guaranteeing encrypted DNS for every interface.
+
+- **Not GUID-dependent:** Applies to all adapters, not just one specific network.
+- **Ideal for:** IT admins, managed devices, or users who want guaranteed DoH enforcement everywhere.
+- **How it works:** Adds a 'GlobalDohIP' section to the registry, matching all major DNS providers in the DoH autotemplate.
+
+#### 📥 Download the Global InterfaceSpecificParameters Registry File
+
+- [Click here to download: Global-InterfaceSpecificParameter.reg](Global-Interface-Specific-Parameters/Global-InterfaceSpecificParameter.reg) (Right-click → "Save link as")
+- Right-click the downloaded file → Select "Merge"
+- Click "Yes" when Windows asks for permission
+- Done! DoH is now enforced systemwide for all supported DNS providers
 
 ---
 
@@ -110,7 +177,7 @@ DNS0.eu and all related IP addresses have been removed because the service was d
 
 You still control which DNS provider you use through Windows Settings.
 
-**All 137 configurations verified against official sources.** ✅
+**All 125 configurations verified against official sources.** ✅
 
 ---
 
@@ -127,7 +194,7 @@ This registry adds **9 more privacy-focused DNS providers** with 125 total confi
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 WHAT YOU GET                                            │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 137 DNS configurations (Microsoft has 3)                │
+│  ✅ 125 DNS configurations (Microsoft has 3)                │
 │  ✅ 12 DNS providers (Microsoft has 3)                      │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe filtering options                           │
@@ -165,8 +232,8 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📖 Additional Documentation
 
-- **[DNS-PROVIDERS-REFERENCE.md](DNS-PROVIDERS-REFERENCE.md)** - Complete DNS provider details, IPv6 addresses, and official sources
-- **[WHY-THIS-MATTERS.md](WHY-THIS-MATTERS.md)** - The full story behind this project + Microsoft collaboration invite
+- [DNS-PROVIDERS-REFERENCE.md](DNS-PROVIDERS-REFERENCE.md) — Complete DNS provider details, IPv6 addresses, and official sources
+- [WHY-THIS-MATTERS.md](WHY-THIS-MATTERS.md) — The full story behind this project + Microsoft collaboration invite
 
 ---
 
@@ -180,21 +247,41 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ---
 
-**Last Updated:** October 2025  
-**Status:** ✅ Verified and ready for public use  
-**License:** MIT License - Free to use with attribution
-
----
-
 DNS0.eu has been discontinued on October 17th, 2025. 
 For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 
 ---
 
+
+## 🚀 Quick Start
+
+1. **Download the registry file:**
+   - [Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)
+   - [Global-InterfaceSpecificParameter.reg](Global-Interface-Specific-Parameters/Global-InterfaceSpecificParameter.reg) (for systemwide enforcement)
+2. **Import the registry file:**
+   - Right-click the file and select "Merge"
+   - Click "Yes" to confirm
+3. **Choose your DNS provider in Windows Settings:**
+   - Windows 11: Settings → Network & Internet → Properties → DNS server assignment → Edit
+   - Windows 10: Settings → Network → Change adapter options → Right-click connection → Properties → IPv4
+4. **Verify DoH is working:**
+   - Open PowerShell and run:
+     ```powershell
+     Get-DnsClientDohServerAddress
+     ```
+   - You should see DNS IPs with DoH template URLs
+
+
+---
+
+**Last Updated:** October 2025  
+**Status:** ✅ Verified and ready for public use  
+**License:** MIT License - Free to use with attribution
+
 ## ℹ️ What is Markdown?
 
 This page (and most documentation here) uses **Markdown** (`.md`), a simple text format for easy-to-read, easy-to-write documentation. Markdown lets you create headings, tables, code blocks, and links with plain text. It’s widely supported and can be parsed or generated by scripts for automation.
 
-Learn more: https://www.markdownguide.org/
+Learn more: [Markdown Guide](https://www.markdownguide.org/)
 
 *Built by a Greenlander who loves Windows and wants to help make it better.* 🇬🇱

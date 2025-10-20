@@ -8,13 +8,13 @@
 - **October 2025:** Still only **3 DNS providers** in the default list
 
 **Microsoft's Official Default List (unchanged since May 2020):**
-1. **Cloudflare** (1.1.1.1, 1.0.0.1) → https://cloudflare-dns.com/dns-query
-2. **Google Public DNS** (8.8.8.8, 8.8.4.4) → https://dns.google/dns-query
-3. **Quad9** (9.9.9.9) → https://dns.quad9.net/dns-query
+1. **Cloudflare** (1.1.1.1, 1.0.0.1) → [Cloudflare DoH](https://cloudflare-dns.com/dns-query)
+2. **Google Public DNS** (8.8.8.8, 8.8.4.4) → [Google DoH](https://dns.google/dns-query)
+3. **Quad9** (9.9.9.9) → [Quad9 DoH](https://dns.quad9.net/dns-query)
 
 **Microsoft's Official Documentation:**
-- Initial Announcement (May 2020): https://techcommunity.microsoft.com/t5/networking-blog/windows-insiders-can-now-test-dns-over-https/ba-p/1381282
-- Technical Documentation: https://learn.microsoft.com/en-us/windows-server/networking/dns/doh-client-support
+- Initial Announcement (May 2020): [Windows Insiders can now test DNS over HTTPS](https://techcommunity.microsoft.com/t5/networking-blog/windows-insiders-can-now-test-dns-over-https/ba-p/1381282)
+- Technical Documentation: [Secure DNS Client over HTTPS (DoH)](https://learn.microsoft.com/en-us/windows-server/networking/dns/doh-client-support)
 
 **That's it. Only these 3 providers. No updates in 5+ years.**
 
@@ -217,7 +217,7 @@ That experience taught me that **Microsoft does listen to community feedback** w
 
 ---
 
-## 💭 A Personal Note
+## 💬 A Personal Note
 
 I started this project as an IT support student, fascinated by how DNS could protect users from malware and surveillance. Over the years, I've:
 
@@ -292,7 +292,7 @@ And that's what matters.
 ┌─────────────────────────────────────────────────────────────┐
 │  📚 PROJECT RESOURCES                                       │
 ├─────────────────────────────────────────────────────────────┤
-│  • This Project: 137 verified DoH configurations            │
+│  • This Project: 125 verified DoH configurations            │
 │  • Official Sources: All provider docs cited                │
 │  • Microsoft Docs: DoH Client Support documentation         │
 │  • Community: Open for contributions                        │
