@@ -7,6 +7,7 @@
 
       DNS0.eu has been discontinued on October 17th, 2025. 
       For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+      Mullvad DNS discontinued since November 2, 2026.
 
 ---
 
@@ -25,7 +26,6 @@
 **Popular DNS IPs:**
 - Cloudflare Security (Fast, privacy-focused).
 - Quad9 (Blocks malware).
-- Mullvad (Excellent privacy and strong blocking)
 - DNS4EU (EU-based, zero-logging).
 - Control D (Excellent privacy, zero-logging, excellence in optional).
 
@@ -168,7 +168,6 @@ A: Use Registry Editor, open it as administrator and to navigate to:
 | **DNS4EU** ❌ | Europe | 86.54.11.1 | EU-funded, multiple filters |
 | **NextDNS** ❌ | Global | 45.90.28.0 | Customizable, privacy-first |
 | **CleanBrowsing** ❌ | USA | 185.228.168.9 | Family-safe, adult filter |
-| **Mullvad DNS** ❌ | Sweden | 194.242.2.2 | VPN provider, ad-blocking |
 | **AdGuard DNS** ❌ | Cyprus | 94.140.14.14 | Ad-blocking, family protection |
 | **Cisco Umbrella/OpenDNS** ❌ | USA | 208.67.222.222 | Enterprise-grade security |
 
