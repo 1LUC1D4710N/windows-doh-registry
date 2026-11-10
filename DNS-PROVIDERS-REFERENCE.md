@@ -2,7 +2,13 @@
 
 Complete reference for all 12 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
 
-**Total:** 125 configurations from 12 providers (as of October 2025)
+**Total:** 114 configurations from 12 providers (as of November 2026)
+
+---
+
+      DNS0.eu has been discontinued on October 17th, 2025. 
+      For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+      Mullvad DNS discontinued since November 2, 2026.
 
 ---
 
@@ -43,12 +49,6 @@ Use these hostnames in Android/iOS Private DNS settings:
 - `dns.adguard-dns.com` - AdGuard DNS (Default)
 - `family.adguard-dns.com` - AdGuard DNS (Family)
 - `unfiltered.adguard-dns.com` - AdGuard DNS (Unfiltered)
-- `dns.mullvad.net` - Mullvad DNS (Base)
-- `adblock.dns.mullvad.net` - Mullvad DNS (Ad-blocking)
-- `base.dns.mullvad.net` - Mullvad DNS (Malware blocking)
-- `extended.dns.mullvad.net` - Mullvad DNS (Extended + Social)
-- `family.dns.mullvad.net` - Mullvad DNS (Family safe)
-- `all.dns.mullvad.net` - Mullvad DNS (Maximum blocking)
 - `doh.cleanbrowsing.org` - CleanBrowsing
 - `doh.libredns.gr` - LibreDNS
 - `anycast.uncensoreddns.org` - UncensoredDNS
@@ -171,25 +171,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 8. Mullvad DNS ❌ (NEW)
-**Location:** Sweden  
-**Provider:** Mullvad VPN (Amagicom AB)  
-**Privacy Policy:** [Mullvad Privacy](https://mullvad.net/privacy)
-
-| Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
-|---------|------|------|--------------|---------------------|
-| Base (No filtering) | 194.242.2.2 | 2a07:e340::2 | https://dns.mullvad.net/dns-query | `dns.mullvad.net` |
-| Ad-blocking | 194.242.2.3 | 2a07:e340::3 | https://adblock.dns.mullvad.net/dns-query | `adblock.dns.mullvad.net` |
-| Base (Ads + Trackers + Malware) | 194.242.2.4 | 2a07:e340::4 | https://base.dns.mullvad.net/dns-query | `base.dns.mullvad.net` |
-| Extended (+ Social Media blocking) | 194.242.2.5 | 2a07:e340::5 | https://extended.dns.mullvad.net/dns-query | `extended.dns.mullvad.net` |
-| Family (+ Adult + Gambling blocking) | 194.242.2.6 | 2a07:e340::6 | https://family.dns.mullvad.net/dns-query | `family.dns.mullvad.net` |
-| All (Maximum blocking) | 194.242.2.9 | 2a07:e340::9 | https://all.dns.mullvad.net/dns-query | `all.dns.mullvad.net` |
-
-**Source:** [Mullvad DNS Help](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/)
-
----
-
-### 9. AdGuard DNS ❌ (NEW)
+### 8. AdGuard DNS ❌ (NEW)
 **Location:** Cyprus  
 **Provider:** AdGuard Software Ltd.  
 **Privacy Policy:** [AdGuard DNS Privacy](https://adguard.com/privacy/dns.html)
@@ -204,7 +186,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 10. Cisco Umbrella (OpenDNS) ❌ (NEW)
+### 9. Cisco Umbrella (OpenDNS) ❌ (NEW)
 **Location:** USA  
 **Provider:** Cisco Systems  
 **Privacy Policy:** [Cisco Privacy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
@@ -219,7 +201,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 11. LibreDNS ❌ (NEW)
+### 10. LibreDNS ❌ (NEW)
 **Location:** Germany  
 **Provider:** LibreOps  
 **Privacy Policy:** [LibreDNS Privacy](https://libredns.gr/privacy/)
@@ -234,7 +216,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ---
 
-### 12. UncensoredDNS ❌ (NEW)
+### 11. UncensoredDNS ❌ (NEW)
 **Location:** Denmark  
 **Provider:** Thomas Steen Rasmussen (Unicast)  
 **Privacy Policy:** [UncensoredDNS Privacy](https://blog.uncensoreddns.org/dns-privacy/)
@@ -263,27 +245,28 @@ Use these hostnames in Android/iOS Private DNS settings:
 - ⚠️ **Geographic Restrictions:** Some content may behave differently with non-local DNS
 
 ### Choosing a Provider:
-- **Privacy-focused:** Mullvad, NextDNS
+- **Privacy-focused:** NextDNS
 - **Security-focused:** Quad9, Cloudflare Security
 - **Family-safe:** Cloudflare Family, Control D Family, CleanBrowsing
 - **EU-based (GDPR):** DNS4EU, Quad9
 - **Customizable:** Control D, NextDNS
-- **Ad-blocking:** AdGuard, Mullvad, Control D variants
+- **Ad-blocking:** AdGuard, Control D variants
 
 ---
 
 ## 📊 Total Configurations
 
-This registry includes **125 DNS configurations** across **12 providers**:
+This registry includes **114 DNS configurations** across **12 providers**:
 - 3 pre-installed in Windows (Cloudflare, Google, Quad9)
 - 11 additional providers
 
 All configurations verified against official documentation as of October 2025.
 
 DNS0.eu was discontinued on October 17th, 2025. All related IP addresses and registry entries have been removed. For secure DNS-over-HTTPS, use alternatives such as DNS4EU or NextDNS.io.
+Mullvad DNS discontinued since November 2, 2026.
 
 ---
 
-**Last Updated:** October 15, 2025  
+**Last Updated:** November 10, 2026  
 **Verification Status:** ✅ All configurations verified against official sources
 
