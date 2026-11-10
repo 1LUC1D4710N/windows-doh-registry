@@ -15,7 +15,7 @@
 1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
 2. **Right-click** the downloaded file → Select **"Merge"**
 3. Click **"Yes"** when Windows asks for permission
-4. Done! All 125 DoH configurations from 12 providers are now available in Windows
+4. Done! All 114 DoH configurations from 12 providers are now available in Windows
 
 ### Step 2: Choose Your DNS Provider
 
@@ -174,9 +174,10 @@ A: Use Registry Editor, open it as administrator and to navigate to:
 ✅ = Already in Microsoft's default list  
 ❌ = **NEW** - Added by this registry (not in Microsoft's list)
 
-**Total:** 125 configurations from 12 providers
+**Total:** 114 configurations from 12 providers
 
 DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+Mullvad DNS discontinued since November 2, 2026.
 
 ---
 
@@ -196,7 +197,7 @@ DNS0.eu and all related IP addresses have been removed because the service was d
 
 You still control which DNS provider you use through Windows Settings.
 
-**All 125 configurations verified against official sources.** ✅
+**All 114 configurations verified against official sources.** ✅
 
 ---
 
@@ -207,13 +208,13 @@ Microsoft's Windows has supported DNS over HTTPS since 2020, but only includes *
 - Google (8.8.8.8)
 - Quad9 (9.9.9.9)
 
-This registry adds **9 more privacy-focused DNS providers** with 125 total configurations, giving you more choices for encrypted DNS.
+This registry adds **9 more privacy-focused DNS providers** with 114 total configurations, giving you more choices for encrypted DNS.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 WHAT YOU GET                                            │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 125 DNS configurations (Microsoft has 3)                │
+│  ✅ 114 DNS configurations (Microsoft has 3)                │
 │  ✅ 12 DNS providers (Microsoft has 3)                      │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe filtering options                           │
@@ -258,7 +259,7 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📊 Quick Stats
 
--- **125 configurations** (Microsoft has 3)
+-- **114 configurations** (Microsoft has 3)
 -- **12 providers** (Microsoft has 3)
 - **100% verified** against official sources
 - **Years of research** compiled into one registry file
@@ -268,6 +269,7 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 DNS0.eu has been discontinued on October 17th, 2025. 
 For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
+Mullvad DNS discontinued since November 2, 2026.
 
 ---
 
@@ -311,7 +313,7 @@ For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 ```
 ---
 
-**Last Updated:** October 2025  
+**Last Updated:** November 2026  
 **Status:** ✅ Verified and ready for public use  
 **License:** MIT License - Free to use with attribution
 
