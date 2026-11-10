@@ -1,6 +1,6 @@
 # Windows DoH Registry - More DNS Privacy Options
 
-**Expand Windows DNS over HTTPS (DoH) support from 3 providers to 12 providers with one registry import.**
+**Expand Windows DNS over HTTPS (DoH) support from 3 providers to 10 providers with one registry import.**
 
 
 ---
@@ -15,7 +15,7 @@
 1. **[Click here to download: Doh-Well-Known-Servers.reg](Doh-Well-Known-Servers.reg)** (Right-click → "Save link as")
 2. **Right-click** the downloaded file → Select **"Merge"**
 3. Click **"Yes"** when Windows asks for permission
-4. Done! All 114 DoH configurations from 12 providers are now available in Windows
+4. Done! All 114 DoH configurations from 10 providers are now available in Windows
 
 ### Step 2: Choose Your DNS Provider
 
@@ -166,15 +166,17 @@ A: Use Registry Editor, open it as administrator and to navigate to:
 | **Quad9** ✅ | Switzerland | 9.9.9.9 | Security-focused, blocks malware |
 | **Control D** ❌ | USA/Canada | 76.76.2.0 | 6 customizable filtering profiles |
 | **DNS4EU** ❌ | Europe | 86.54.11.1 | EU-funded, multiple filters |
-| **NextDNS** ❌ | Global | 45.90.28.0 | Customizable, privacy-first |
+| **NextDNS** | Global | 45.90.28.0 | Separate profile-based setup; not included in this registry |
 | **CleanBrowsing** ❌ | USA | 185.228.168.9 | Family-safe, adult filter |
 | **AdGuard DNS** ❌ | Cyprus | 94.140.14.14 | Ad-blocking, family protection |
 | **Cisco Umbrella/OpenDNS** ❌ | USA | 208.67.222.222 | Enterprise-grade security |
+| **LibreDNS** ❌ | Germany | 116.202.176.26 | Lightweight ad-blocking |
+| **UncensoredDNS** ❌ | Denmark | 91.239.100.100 | Unfiltered DNS |
 
 ✅ = Already in Microsoft's default list  
-❌ = **NEW** - Added by this registry (not in Microsoft's list)
+❌ = **NEW** - Added by this registry (not in Microsoft's list); NextDNS is separate
 
-**Total:** 114 configurations from 12 providers
+**Total:** 114 registry configurations from 10 providers
 
 DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
 Mullvad DNS discontinued since November 2, 2026.
@@ -208,14 +210,14 @@ Microsoft's Windows has supported DNS over HTTPS since 2020, but only includes *
 - Google (8.8.8.8)
 - Quad9 (9.9.9.9)
 
-This registry adds **9 more privacy-focused DNS providers** with 114 total configurations, giving you more choices for encrypted DNS.
+This registry adds **7 more privacy-focused DNS providers** with 114 total configurations, giving you more choices for encrypted DNS.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 WHAT YOU GET                                            │
 ├─────────────────────────────────────────────────────────────┤
 │  ✅ 114 DNS configurations (Microsoft has 3)                │
-│  ✅ 12 DNS providers (Microsoft has 3)                      │
+│  ✅ 10 DNS providers (Microsoft has 3)                      │
 │  ✅ European providers for GDPR compliance                  │
 │  ✅ Family-safe filtering options                           │
 │  ✅ Ad-blocking DNS variants                                │
@@ -259,8 +261,8 @@ Dear Windows Team: This registry represents years of verification work, and I'm 
 
 ## 📊 Quick Stats
 
--- **114 configurations** (Microsoft has 3)
--- **12 providers** (Microsoft has 3)
+- **114 configurations** (Microsoft has 3)
+- **10 providers** (Microsoft has 3)
 - **100% verified** against official sources
 - **Years of research** compiled into one registry file
 - **Ready to use** right now
@@ -313,7 +315,7 @@ Mullvad DNS discontinued since November 2, 2026.
 ```
 ---
 
-**Last Updated:** November 2026  
+**Last Updated:** November 2026
 **Status:** ✅ Verified and ready for public use  
 **License:** MIT License - Free to use with attribution
 

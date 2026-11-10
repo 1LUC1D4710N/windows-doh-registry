@@ -1,12 +1,12 @@
 # DNS Providers Reference Guide
 
-Complete reference for all 12 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
+Complete reference for all 10 DNS providers included in this registry, with IPv4/IPv6 addresses, DoH endpoints, hostnames for Private DNS (smartphones), and official sources.
 
-**Total:** 114 configurations from 12 providers (as of November 2026)
+**Total:** 114 registry configurations from 10 providers (as of November 2026)
 
 ---
 
-      DNS0.eu has been discontinued on October 17th, 2025. 
+      DNS0.eu has been discontinued on October 17th, 2025.
       For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.
       Mullvad DNS discontinued since November 2, 2026.
 
@@ -98,7 +98,7 @@ Use these hostnames in Android/iOS Private DNS settings:
 | Variant | IPv4 | IPv6 | DoH Template | Hostname/Private DNS |
 |---------|------|------|--------------|---------------------|
 | Standard (Malware blocking, DNSSEC) | 9.9.9.9, 149.112.112.112 | 2620:fe::fe, 2620:fe::9 | https://dns.quad9.net/dns-query | `dns.quad9.net` |
-| Alternative Endpoint (Same filtering) | 9.9.9.9, 149.112.112.9 | 2620:fe::9, 2620:fe::fe:9 | https://dns9.quad9.net/dns-query | `dns9.quad9.net` |
+| Alternative Endpoint (Same filtering) | 149.112.112.9 | 2620:fe::fe:9 | https://dns9.quad9.net/dns-query | `dns9.quad9.net` |
 | Unsecured (No malware blocking, no DNSSEC) | 9.9.9.10, 149.112.112.10 | 2620:fe::10, 2620:fe::fe:10 | https://dns10.quad9.net/dns-query | `dns10.quad9.net` |
 | Secured with ECS (Malware blocking, DNSSEC, ECS enabled) | 9.9.9.11, 149.112.112.11 | 2620:fe::11, 2620:fe::fe:11 | https://dns11.quad9.net/dns-query | `dns11.quad9.net` |
 
@@ -135,13 +135,11 @@ Use these hostnames in Android/iOS Private DNS settings:
 | Child Safe | 86.54.11.12, 86.54.11.212 | 2a13:1001::86:54:11:12, 2a13:1001::86:54:11:212 | https://child.joindns4.eu/dns-query | `child.joindns4.eu` |
 | No Ads | 86.54.11.13, 86.54.11.213 | 2a13:1001::86:54:11:13, 2a13:1001::86:54:11:213 | https://noads.joindns4.eu/dns-query | `noads.joindns4.eu` |
 | Child Safe + No Ads | 86.54.11.11, 86.54.11.211 | 2a13:1001::86:54:11:11, 2a13:1001::86:54:11:211 | https://child-noads.joindns4.eu/dns-query | `child-noads.joindns4.eu` |
-| Unfiltered | 86.54.11.100, 86.54.11.200 | 2a13:1001::86:54:11:100, 2a13:1001::86:54:11:200 | https://unfiltered.joindns4.eu/dns-query | `unfiltered.joindns4.eu` |
-
 **Source:** [DNS4EU](https://www.dns4eu.eu/)
 
 ---
 
-### 6. NextDNS ❌ (NEW)
+### 6. NextDNS (separate setup; not included in this registry)
 **Location:** Global (Anycast)  
 **Provider:** NextDNS Inc.  
 **Privacy Policy:** [NextDNS Privacy](https://nextdns.io/privacy)
@@ -256,17 +254,17 @@ Use these hostnames in Android/iOS Private DNS settings:
 
 ## 📊 Total Configurations
 
-This registry includes **114 DNS configurations** across **12 providers**:
+This registry includes **114 DNS configurations** across **10 providers**:
 - 3 pre-installed in Windows (Cloudflare, Google, Quad9)
-- 11 additional providers
+- 7 additional providers
+- NextDNS is documented separately because it requires profile-based setup and is not included in the registry files.
 
-All configurations verified against official documentation as of October 2025.
+All configurations verified against official documentation as of November 2026.
 
 DNS0.eu was discontinued on October 17th, 2025. All related IP addresses and registry entries have been removed. For secure DNS-over-HTTPS, use alternatives such as DNS4EU or NextDNS.io.
 Mullvad DNS discontinued since November 2, 2026.
 
 ---
 
-**Last Updated:** November 10, 2026  
+**Last Updated:** November 10, 2026
 **Verification Status:** ✅ All configurations verified against official sources
-

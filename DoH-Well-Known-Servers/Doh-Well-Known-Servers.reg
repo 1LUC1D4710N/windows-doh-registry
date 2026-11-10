@@ -83,6 +83,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\149.112.112.11]
 "Template"="https://dns11.quad9.net/dns-query"
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\149.112.112.10]
+"Template"="https://dns10.quad9.net/dns-query"
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\149.112.112.112]
 "Template"="https://dns.quad9.net/dns-query"
 
@@ -340,4 +343,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:0:ccd::2]
 "Template"="https://sandbox.opendns.com/dns-query"
-
