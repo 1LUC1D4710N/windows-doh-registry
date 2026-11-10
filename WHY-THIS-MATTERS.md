@@ -51,7 +51,7 @@ Over several years of research and verification, this project has:
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 PROJECT STATISTICS                                      │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 125 DNS configurations verified                         │
+│  ✅ 114 DNS configurations verified                         │
 │  ✅ 12 DNS providers documented (Microsoft has 3)           │
 │  ✅ 45× more configurations than Microsoft's default        │
 │  ✅ European providers for GDPR compliance                  │
@@ -103,7 +103,7 @@ That experience taught me that **Microsoft does listen to community feedback** w
 ┌─────────────────────────────────────────────────────────────┐
 │  🎁 WHAT MICROSOFT GETS                                     │
 ├─────────────────────────────────────────────────────────────┤
-│  ✅ 125 verified DNS configurations                         │
+│  ✅ 114 verified DNS configurations                         │
 │  ✅ 12 DNS providers (you have 3, I've verified 9 more)     │
 │  ✅ Complete verification notes with source citations       │
 │  ✅ European provider options for GDPR compliance           │
@@ -292,7 +292,7 @@ And that's what matters.
 ┌─────────────────────────────────────────────────────────────┐
 │  📚 PROJECT RESOURCES                                       │
 ├─────────────────────────────────────────────────────────────┤
-│  • This Project: 125 verified DoH configurations            │
+│  • This Project: 114 verified DoH configurations            │
 │  • Official Sources: All provider docs cited                │
 │  • Microsoft Docs: DoH Client Support documentation         │
 │  • Community: Open for contributions                        │
@@ -314,9 +314,10 @@ And that's what matters.
 ---
 
 > **DNS0.eu and all related IP addresses have been removed because the service was discontinued on October 17th, 2025. For secure DNS-over-HTTPS, use alternatives like DNS4EU or NextDNS.io.**
+> **Mullvad DNS discontinued since November 2, 2026.**
 
 ---
 
-*Last Updated: October 2025*  
+*Last Updated: November 2026*  
 *Project Status: Open for collaboration*  
 *Contact: Published openly for community benefit*
